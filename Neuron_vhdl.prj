@@ -1,0 +1,7 @@
+vhdl work "C:\Users\FarazParham\Xilinx\Projects\NeuralNetwork\Utility.vhd"
+vhdl work "C:\Users\FarazParham\Xilinx\Projects\NeuralNetwork\Selector.vhd"
+vhdl work "C:\Users\FarazParham\Xilinx\Projects\NeuralNetwork\Register.vhd"
+vhdl work "C:\Users\FarazParham\Xilinx\Projects\NeuralNetwork\Multiplier.vhd"
+vhdl work "C:\Users\FarazParham\Xilinx\Projects\NeuralNetwork\Adder.vhd"
+vhdl work "C:\Users\FarazParham\Xilinx\Projects\NeuralNetwork\ActivationFunc.vhd"
+vhdl work "C:\Users\FarazParham\Xilinx\Projects\NeuralNetwork\Neuron.vhd"

@@ -1,0 +1,52 @@
+V3 26
+FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/ActivationFunc.vhd 2020/06/20.16:08:09 P.20131013
+EN work/ActivationFunc 1592653234 \
+      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/ActivationFunc.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/ActivationFunc/Behavioral 1592653235 \
+      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/ActivationFunc.vhd \
+      EN work/ActivationFunc 1592653234
+FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Adder.vhd 2020/06/13.08:55:42 P.20131013
+EN work/Adder 1592653232 \
+      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Adder.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Adder/Behavioral 1592653233 \
+      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Adder.vhd \
+      EN work/Adder 1592653232
+FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Multiplier.vhd 2020/06/13.10:26:15 P.20131013
+EN work/Multiplier 1592653230 \
+      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Multiplier.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Multiplier/Behavioral 1592653231 \
+      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Multiplier.vhd \
+      EN work/Multiplier 1592653230
+FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Neuron.vhd 2020/06/20.16:10:17 P.20131013
+EN work/Neuron 1592653236 \
+      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Neuron.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/Utility 1592653225
+AR work/Neuron/Behavioral 1592653237 \
+      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Neuron.vhd \
+      EN work/Neuron 1592653236 CP Selector CP Reg CP Multiplier CP Adder \
+      CP ActivationFunc
+FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Register.vhd 2020/06/20.16:02:58 P.20131013
+EN work/Reg 1592653228 \
+      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Register.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Reg/Behavioral 1592653229 \
+      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Register.vhd \
+      EN work/Reg 1592653228
+FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Selector.vhd 2020/06/20.16:02:01 P.20131013
+EN work/Selector 1592653226 \
+      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Selector.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB work/Utility 1592653225
+AR work/Selector/Behavioral 1592653227 \
+      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Selector.vhd \
+      EN work/Selector 1592653226
+FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Utility.vhd 2020/06/13.11:05:20 P.20131013
+PH work/Utility 1592653224 \
+      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Utility.vhd \
+      PB ieee/std_logic_1164 1381692176
+PB work/Utility 1592653225 \
+      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Utility.vhd \
+      PH work/Utility 1592653224

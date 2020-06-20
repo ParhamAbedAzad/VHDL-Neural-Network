@@ -1,0 +1,47 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.33 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.33 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Utility.vhd" in Library work.
+Architecture utility of Entity utility is up to date.
+Compiling vhdl file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Selector.vhd" in Library work.
+Architecture behavioral of Entity selector is up to date.
+Compiling vhdl file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Register.vhd" in Library work.
+Architecture behavioral of Entity reg is up to date.
+Compiling vhdl file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Multiplier.vhd" in Library work.
+Architecture behavioral of Entity multiplier is up to date.
+Compiling vhdl file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Adder.vhd" in Library work.
+Architecture behavioral of Entity adder is up to date.
+Compiling vhdl file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/ActivationFunc.vhd" in Library work.
+Architecture behavioral of Entity activationfunc is up to date.
+Compiling vhdl file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Neuron.vhd" in Library work.
+Entity <neuron> compiled.
+Entity <neuron> (Architecture <behavioral>) compiled.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.53 secs
+ 
+--> 
+
+Total memory usage is 4511384 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
