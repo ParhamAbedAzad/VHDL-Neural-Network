@@ -17,4 +17,5 @@ begin
 		OutI <= I(selector) when selector<n else (others => '0');
 		OutW <= W(selector) when selector<n else (others => '0');
 end Behavioral;
-
+ 
+ 

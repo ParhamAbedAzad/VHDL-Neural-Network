@@ -26,9 +26,16 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Adder.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Adder.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Adder.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Layer1.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Layer1.stx"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="Layer1.vhi"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Layer1.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Neuron.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Neuron.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Neuron.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Selector.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Selector.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Selector.xst"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 

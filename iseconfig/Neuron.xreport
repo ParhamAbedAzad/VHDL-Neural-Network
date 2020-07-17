@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-06-20T13:54:58</DateModified>
+  <DateModified>2020-07-17T14:56:36</DateModified>
   <ModuleName>Neuron</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/iseconfig/Neuron.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Asus/Desktop/FPGA nueral/neural-network/iseconfig/Neuron.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Asus/Desktop/FPGA nueral/neural-network\</ImplementationReportsDirectory>
   <DateInitialized>2020-06-20T13:54:56</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
