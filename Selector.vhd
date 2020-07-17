@@ -8,8 +8,8 @@ entity Selector is
     Port ( I : in  myArray(0 to n-1);
            W : in  myArray(0 to n-1);
 			  selector : in integer range 0 to n;
-           OutI : out  STD_LOGIC_VECTOR(15 DOWNTO 0);
-           OutW : out  STD_LOGIC_VECTOR(15 DOWNTO 0)
+           OutI : out  STD_LOGIC_VECTOR(31 DOWNTO 0);
+           OutW : out  STD_LOGIC_VECTOR(31 DOWNTO 0)
 			  );
 end Selector;
 architecture Behavioral of Selector is

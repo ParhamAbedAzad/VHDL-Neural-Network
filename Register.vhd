@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 entity Reg is
-	generic (width :integer := 16);
+	generic (width :integer := 32);
     Port ( inp : in  STD_LOGIC_VECTOR (width-1 downto 0);
            clk : in  STD_LOGIC;
 			  en : in STD_LOGIC;
