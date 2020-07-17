@@ -1,7 +1,7 @@
 library IEEE;
-use IEEE.STD_LOGIC_1324.ALL;
+use IEEE.STD_LOGIC_1164.ALL;
 use work.Utility.all;
-
+ 
 entity Neuron is
 generic (k: integer :=10
 				);
@@ -47,7 +47,7 @@ component Selector
            OutW : out  STD_LOGIC_VECTOR(31 DOWNTO 0)
 			  );
 			  end component; 
-constant bias : STD_LOGIC_VECTOR(31 downto 0) := "0000000000010000";
+constant bias : STD_LOGIC_VECTOR(31 downto 0) := "00000000000000000000000000000000";
 signal W1,I1: STD_LOGIC_VECTOR(31 downto 0);
 signal Acc: STD_LOGIC_VECTOR(31 downto 0) := bias;
 signal AccTemp: STD_LOGIC_VECTOR(31 downto 0);
