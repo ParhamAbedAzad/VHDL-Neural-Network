@@ -6,6 +6,7 @@ entity TopLevel is
            inp : in  STD_LOGIC_VECTOR (31 downto 0);
            weight : in  STD_LOGIC_VECTOR (31 downto 0);
            WRst : in  STD_LOGIC;
+			  done : in STD_LOGIC;
            outp : out  STD_LOGIC_VECTOR (31 downto 0));
 end TopLevel;
 

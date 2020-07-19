@@ -68,7 +68,7 @@ if rising_edge(clk) then
 		if(Counter_Y=n)then
 			Counter_Y:=0;
 			Counter_X:=0;
-			rst_weight_en:='0';
+			rst_w	eight_en:='0';
 		end if;
 		if(Counter_X=k)then
 			Counter_Y:=Counter_Y+1;

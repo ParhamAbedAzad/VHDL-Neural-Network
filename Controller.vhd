@@ -6,18 +6,25 @@ entity Controller is
 			  rst : in STD_LOGIC;
            en1 : out  STD_LOGIC;
            en2 : out  STD_LOGIC;
-           en3 : out  STD_LOGIC);
+           en3 : out  STD_LOGIC;
+			  done : out STD_LOGIC := '1');
 end Controller;
 
 architecture Behavioral of Controller is
 begin
 process(clk)
 variable Counter : integer range 0 to 15 := 0;--4+5+3+1
+variable Counter2 : integer range 0 to  := 0;--4+5+3+1
 begin
 if rising_edge(Clk) then
-	if rst=1 and Counter >  12 then
+	elsif rst='1' or WRST='1' then
+		DONE <= '0';
 		Counter := 0;
-	else
+		en1 <= '0';
+		en2 <= '0';
+		en3 <= '0';
+		reseting := '1';
+	elsif Counter < 12 then
 	Counter <= Counter+1;
 		if Counter = 4 then
 			en1 <= '0';
@@ -27,6 +34,7 @@ if rising_edge(Clk) then
 			en3 <= '1';
 		elsif Counter = 12 then
 			en3 <= '0';
+			DONE <= '1';
 		end if;
 	end if;
 end if;
