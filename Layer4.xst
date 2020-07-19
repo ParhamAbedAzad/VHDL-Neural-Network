@@ -1,5 +1,5 @@
 set -tmpdir "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/xst/projnav.tmp"
 set -xsthdpdir "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/xst"
 elaborate
--ifn Neuron.prj
+-ifn Layer4.prj
 -ifmt mixed

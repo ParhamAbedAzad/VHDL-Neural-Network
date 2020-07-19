@@ -22,7 +22,7 @@ architecture Behavioral of Layer3 is
 	generic (Ks: integer :=k);
 			Port (I : in  myArray(0 to Ks-1);
 					W : in  myArray(0 to Ks-1);
-					inp : in  myArray(0 to Ks-1);
+					BiasIn : in  STD_LOGIC_VECTOR (31 downto 0);
 					clk : in  STD_LOGIC;
 					Rst :  in  STD_LOGIC;
 					outp : out  STD_LOGIC_VECTOR (31 downto 0));
@@ -35,10 +35,10 @@ signal weights3: myArray (0 to k-1);
 signal biases: myArray (0 to n-1);
 
 begin
-Nr1: Neuron port map (I,weights1,biases,clk,rst,O(0));
-Nr2: Neuron port map (I,weights2,biases,clk,rst,O(1));
-Nr3: Neuron port map (I,weights3,biases,clk,rst,O(2));
-
+Nr1: Neuron port map (I,weights1,biases(0),clk,rst,O(0));
+Nr2: Neuron port map (I,weights2,biases(1),clk,rst,O(1));
+Nr3: Neuron port map (I,weights3,biases(2),clk,rst,O(2));
+                                       
 
 process(clk)
 variable Counter_X : integer range 0 to 255 := 0;

@@ -7,7 +7,7 @@ generic (k: integer :=10
 				);
     Port ( I : in  myArray(0 to k-1);
            W : in  myArray(0 to k-1);
-			  inp : in  myArray(0 to k-1);
+			  BiasIn : in  STD_LOGIC_VECTOR (31 downto 0);
            clk : in  STD_LOGIC;
 			  Rst :  in  STD_LOGIC;
            outp : out  STD_LOGIC_VECTOR (31 downto 0));
@@ -47,9 +47,9 @@ component Selector
            OutW : out  STD_LOGIC_VECTOR(31 DOWNTO 0)
 			  );
 			  end component; 
-constant bias : STD_LOGIC_VECTOR(31 downto 0) := "00000000000000000000000000000000";
+constant bias : STD_LOGIC_VECTOR(31 downto 0) := BiasIn;
 signal W1,I1: STD_LOGIC_VECTOR(31 downto 0);
-signal Acc: STD_LOGIC_VECTOR(31 downto 0) := bias;
+signal Acc: STD_LOGIC_VECTOR(31 downto 0) := BiasIn;
 signal AccTemp: STD_LOGIC_VECTOR(31 downto 0);
 signal MultOut: STD_LOGIC_VECTOR(31 downto 0);
 signal OutTemp: STD_LOGIC_VECTOR(31 downto 0);
@@ -71,7 +71,7 @@ begin
 		Counter := 0;
 		ActiveEn <= '0';
 		RegEn <= '1';
-		Acc <= bias;
+		Acc <= BiasIn;
 		selectSig <= k;
 	else
 	if Counter<k then

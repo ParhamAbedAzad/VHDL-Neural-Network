@@ -36,6 +36,9 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Layer3.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Layer3.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Layer3.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Layer4.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Layer4.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Layer4.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Neuron.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Neuron.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Neuron.xst"/>

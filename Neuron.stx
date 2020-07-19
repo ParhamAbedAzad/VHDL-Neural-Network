@@ -1,63 +1,61 @@
 Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to C:/Users/Asus/Desktop/FPGA nueral/neural-network/xst/projnav.tmp
+--> Parameter TMPDIR set to C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.93 secs
  
---> Parameter xsthdpdir set to C:/Users/Asus/Desktop/FPGA nueral/neural-network/xst
+--> Parameter xsthdpdir set to C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.97 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-WARNING:HDLParsers:3607 - Unit work/Neuron is now defined in a different file.  It was defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Neuron.vhd", and is now defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Neuron.vhd".
-WARNING:HDLParsers:3607 - Unit work/Neuron/Behavioral is now defined in a different file.  It was defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Neuron.vhd", and is now defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Neuron.vhd".
-WARNING:HDLParsers:3607 - Unit work/ActivationFunc is now defined in a different file.  It was defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/ActivationFunc.vhd", and is now defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/ActivationFunc.vhd".
-WARNING:HDLParsers:3607 - Unit work/ActivationFunc/Behavioral is now defined in a different file.  It was defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/ActivationFunc.vhd", and is now defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/ActivationFunc.vhd".
-WARNING:HDLParsers:3607 - Unit work/Adder is now defined in a different file.  It was defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Adder.vhd", and is now defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Adder.vhd".
-WARNING:HDLParsers:3607 - Unit work/Adder/Behavioral is now defined in a different file.  It was defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Adder.vhd", and is now defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Adder.vhd".
-WARNING:HDLParsers:3607 - Unit work/Multiplier is now defined in a different file.  It was defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Multiplier.vhd", and is now defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Multiplier.vhd".
-WARNING:HDLParsers:3607 - Unit work/Multiplier/Behavioral is now defined in a different file.  It was defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Multiplier.vhd", and is now defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Multiplier.vhd".
-WARNING:HDLParsers:3607 - Unit work/Reg is now defined in a different file.  It was defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Register.vhd", and is now defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Register.vhd".
-WARNING:HDLParsers:3607 - Unit work/Reg/Behavioral is now defined in a different file.  It was defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Register.vhd", and is now defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Register.vhd".
-WARNING:HDLParsers:3607 - Unit work/Selector is now defined in a different file.  It was defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Selector.vhd", and is now defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Selector.vhd".
-WARNING:HDLParsers:3607 - Unit work/Selector/Behavioral is now defined in a different file.  It was defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Selector.vhd", and is now defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Selector.vhd".
-WARNING:HDLParsers:3607 - Unit work/Utility is now defined in a different file.  It was defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Utility.vhd", and is now defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Utility.vhd".
-WARNING:HDLParsers:3607 - Unit work/Utility is now defined in a different file.  It was defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Utility.vhd", and is now defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Utility.vhd".
-Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Utility.vhd" in Library work.
+WARNING:HDLParsers:3607 - Unit work/Neuron is now defined in a different file.  It was defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Neuron.vhd", and is now defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Neuron.vhd".
+WARNING:HDLParsers:3607 - Unit work/Neuron/Behavioral is now defined in a different file.  It was defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Neuron.vhd", and is now defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Neuron.vhd".
+WARNING:HDLParsers:3607 - Unit work/ActivationFunc is now defined in a different file.  It was defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/ActivationFunc.vhd", and is now defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/ActivationFunc.vhd".
+WARNING:HDLParsers:3607 - Unit work/ActivationFunc/Behavioral is now defined in a different file.  It was defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/ActivationFunc.vhd", and is now defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/ActivationFunc.vhd".
+WARNING:HDLParsers:3607 - Unit work/Adder is now defined in a different file.  It was defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Adder.vhd", and is now defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Adder.vhd".
+WARNING:HDLParsers:3607 - Unit work/Adder/Behavioral is now defined in a different file.  It was defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Adder.vhd", and is now defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Adder.vhd".
+WARNING:HDLParsers:3607 - Unit work/Multiplier is now defined in a different file.  It was defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Multiplier.vhd", and is now defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Multiplier.vhd".
+WARNING:HDLParsers:3607 - Unit work/Multiplier/Behavioral is now defined in a different file.  It was defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Multiplier.vhd", and is now defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Multiplier.vhd".
+WARNING:HDLParsers:3607 - Unit work/Reg is now defined in a different file.  It was defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Register.vhd", and is now defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Register.vhd".
+WARNING:HDLParsers:3607 - Unit work/Reg/Behavioral is now defined in a different file.  It was defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Register.vhd", and is now defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Register.vhd".
+WARNING:HDLParsers:3607 - Unit work/Selector is now defined in a different file.  It was defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Selector.vhd", and is now defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Selector.vhd".
+WARNING:HDLParsers:3607 - Unit work/Selector/Behavioral is now defined in a different file.  It was defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Selector.vhd", and is now defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Selector.vhd".
+WARNING:HDLParsers:3607 - Unit work/Utility is now defined in a different file.  It was defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Utility.vhd", and is now defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Utility.vhd".
+WARNING:HDLParsers:3607 - Unit work/Utility is now defined in a different file.  It was defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Utility.vhd", and is now defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Utility.vhd".
+Compiling vhdl file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Utility.vhd" in Library work.
 Architecture utility of Entity utility is up to date.
-Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Selector.vhd" in Library work.
+Compiling vhdl file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Selector.vhd" in Library work.
 Architecture behavioral of Entity selector is up to date.
-Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Register.vhd" in Library work.
+Compiling vhdl file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Register.vhd" in Library work.
 Architecture behavioral of Entity reg is up to date.
-Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Multiplier.vhd" in Library work.
-Entity <multiplier> compiled.
-Entity <multiplier> (Architecture <behavioral>) compiled.
-Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Adder.vhd" in Library work.
+Compiling vhdl file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Multiplier.vhd" in Library work.
+Architecture behavioral of Entity multiplier is up to date.
+Compiling vhdl file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Adder.vhd" in Library work.
 Architecture behavioral of Entity adder is up to date.
-Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/ActivationFunc.vhd" in Library work.
+Compiling vhdl file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/ActivationFunc.vhd" in Library work.
 Architecture behavioral of Entity activationfunc is up to date.
-Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Neuron.vhd" in Library work.
+Compiling vhdl file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Neuron.vhd" in Library work.
 Entity <neuron> compiled.
-ERROR:HDLParsers:3312 - "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Neuron.vhd" Line 58. Undefined symbol 'n'.
-ERROR:HDLParsers:1209 - "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Neuron.vhd" Line 58. n: Undefined symbol (last report in this block)
+Entity <neuron> (Architecture <behavioral>) compiled.
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.51 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.41 secs
  
 --> 
 
-Total memory usage is 4485280 kilobytes
+Total memory usage is 4511396 kilobytes
 
-Number of errors   :    2 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
 Number of warnings :   15 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

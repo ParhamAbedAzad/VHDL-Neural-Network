@@ -1,6 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use ieee.std_logic_unsigned.all;
+use ieee.std_logic_signed.all;
 entity Multiplier is
 	generic (width : integer := 32;
 				point: integer :=16);

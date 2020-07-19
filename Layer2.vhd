@@ -22,7 +22,7 @@ architecture Behavioral of Layer2 is
 	generic (Ks: integer :=k);
 			Port (I : in  myArray(0 to Ks-1);
 					W : in  myArray(0 to Ks-1);
-					inp : in  myArray(0 to Ks-1);
+					BiasIn : in  STD_LOGIC_VECTOR (31 downto 0);
 					clk : in  STD_LOGIC;
 					Rst :  in  STD_LOGIC;
 					outp : out  STD_LOGIC_VECTOR (31 downto 0));
@@ -36,11 +36,11 @@ signal weights5: myArray (0 to k-1);
 signal biases: myArray (0 to n-1);
 
 begin
-Nr1: Neuron port map (I,weights1,biases,clk,rst,O(0));
-Nr2: Neuron port map (I,weights2,biases,clk,rst,O(1));
-Nr3: Neuron port map (I,weights3,biases,clk,rst,O(2));
-Nr4: Neuron port map (I,weights4,biases,clk,rst,O(3));
-Nr5: Neuron port map (I,weights5,biases,clk,rst,O(4));
+Nr1: Neuron port map (I,weights1,biases(0),clk,rst,O(0));
+Nr2: Neuron port map (I,weights2,biases(1),clk,rst,O(1));
+Nr3: Neuron port map (I,weights3,biases(2),clk,rst,O(2));
+Nr4: Neuron port map (I,weights4,biases(3),clk,rst,O(3));
+Nr5: Neuron port map (I,weights5,biases(4),clk,rst,O(4));
 process(clk)
 variable Counter_X : integer range 0 to 255 := 0;
 variable Counter_Y : integer range 0 to 255 := 0;
@@ -77,7 +77,7 @@ if rising_edge(clk) then
 			Counter_Y:=Counter_Y+1;
 			Counter_X:=0;
 		end if;
-	--f
+	--F
 	end if;
 end if;
 end process;

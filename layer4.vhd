@@ -11,7 +11,7 @@ generic (n : integer :=1;k: integer :=3);
 			  rst :  in  STD_LOGIC;
 			  rst_weights :  in  STD_LOGIC;
 			  serial_inp : in  STD_LOGIC_VECTOR (31 downto 0);
-           O : out myArray(0 to n-1));
+           O : out STD_LOGIC_VECTOR (31 downto 0));
 end Layer4;
 
 
@@ -22,7 +22,7 @@ architecture Behavioral of Layer4 is
 	generic (Ks: integer :=k);
 			Port (I : in  myArray(0 to Ks-1);
 					W : in  myArray(0 to Ks-1);
-					inp : in  myArray(0 to Ks-1);
+					BiasIn : in  STD_LOGIC_VECTOR (31 downto 0);
 					clk : in  STD_LOGIC;
 					Rst :  in  STD_LOGIC;
 					outp : out  STD_LOGIC_VECTOR (31 downto 0));
@@ -32,7 +32,7 @@ signal weights1: myArray (0 to k-1);
 signal biases: myArray (0 to n-1);
 
 begin
-Nr1: Neuron port map (I,weights1,biases,clk,rst,O(0));
+Nr1: Neuron port map (I,weights1,biases(0),clk,rst,O);
 
 
 process(clk)
