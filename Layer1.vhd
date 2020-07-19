@@ -43,6 +43,7 @@ Nr4: Neuron port map (I,weights4,biases(3),clk,rst,O(3));
 process(clk) 
 variable Counter_X : integer range 0 to 255 := 0;
 variable Counter_Y : integer range 0 to 255 := 0;
+variable Counter_B : integer range 0 to 255 := 0;
 variable rst_weight_en : STD_LOGIC;
 begin
 
@@ -53,7 +54,16 @@ if rising_edge(clk) then
 		rst_weight_en:='1';
 	end if;
 		if(rst_weight_en = '1') then
-		--fill arr
+			
+			--fill biases first
+			if((Counter_B < n ) then
+				biases(Counter_B)<=serial_inp;
+				Counter_B:=Counter_B+1;
+			end if;
+				
+		
+
+			--fill weights
 		
 			if(Counter_Y=0)then
 			weights1(Counter_X)<=serial_inp;
@@ -68,6 +78,7 @@ if rising_edge(clk) then
 		if(Counter_Y=n)then
 			Counter_Y:=0;
 			Counter_X:=0;
+			Counter_B:=0;
 			rst_w	eight_en:='0';
 		end if;
 		if(Counter_X=k)then
