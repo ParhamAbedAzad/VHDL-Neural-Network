@@ -1,7 +1,8 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 entity Controller is
-    Port ( clk : in  STD_LOGIC;
+    Port ( WRST : in STD_LOGIC;
+			  clk : in  STD_LOGIC;
 			  rst : in STD_LOGIC;
            en1 : out  STD_LOGIC;
            en2 : out  STD_LOGIC;

@@ -59,10 +59,10 @@ signal Connection4: myArray (0 to 2);
 signal en1,en2,en3,en4,RST,RSTW,RSTW1,RSTW2,RSTW3,RSTW4: std_logic;
 begin
 Lr1: Layer1 port map (Inp,en1,clk,rst,RSTW1,weight,Connection2);
-Lr2: Layer2 port map (Connection2,en1,clk,rst,RSTW1,weight,Connection3);
-Lr3: Layer3 port map (Connection3,en1,clk,rst,RSTW1,weight,Connection4);
-Lr4: Layer4 port map (Connection4,en1,clk,rst,RSTW1,weight,);
-Cntr: Controller port map (I,weights4,biases(3),clk,rst,O(3));
+Lr2: Layer2 port map (Connection2,en2,clk,rst,RSTW2,weight,Connection3);
+Lr3: Layer3 port map (Connection3,en3,clk,rst,RSTW3,weight,Connection4);
+Lr4: Layer4 port map (Connection4,en4,clk,rst,RSTW4,weight,OUTP);
+Cntr: Controller port map(WRST,CLK,RST,En1,En2,En3);
 
 end Behavioral;
 
