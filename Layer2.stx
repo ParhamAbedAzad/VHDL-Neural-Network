@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to C:/Users/Asus/Desktop/FPGA nueral/neural-network/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
@@ -32,12 +32,12 @@ Architecture behavioral of Entity activationfunc is up to date.
 Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Neuron.vhd" in Library work.
 Architecture behavioral of Entity neuron is up to date.
 Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer2.vhd" in Library work.
-Entity <Layer2> compiled.
-Entity <Layer2> (Architecture <Behavioral>) compiled.
+Entity <layer2> compiled.
+Entity <layer2> (Architecture <behavioral>) compiled.
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.42 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.48 secs
  
 --> 
 

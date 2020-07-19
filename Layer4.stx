@@ -1,50 +1,51 @@
 Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/xst/projnav.tmp
+--> Parameter TMPDIR set to C:/Users/Asus/Desktop/FPGA nueral/neural-network/xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 2.00 secs
-Total CPU time to Xst completion: 1.74 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
  
---> Parameter xsthdpdir set to C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/xst
+--> Parameter xsthdpdir set to C:/Users/Asus/Desktop/FPGA nueral/neural-network/xst
 
 
-Total REAL time to Xst completion: 2.00 secs
-Total CPU time to Xst completion: 1.75 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Utility.vhd" in Library work.
+WARNING:HDLParsers:3607 - Unit work/Layer4 is now defined in a different file.  It was defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Layer4.vhd", and is now defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer4.vhd".
+WARNING:HDLParsers:3607 - Unit work/Layer4/Behavioral is now defined in a different file.  It was defined in "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Layer4.vhd", and is now defined in "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer4.vhd".
+Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Utility.vhd" in Library work.
 Architecture utility of Entity utility is up to date.
-Compiling vhdl file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Selector.vhd" in Library work.
+Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Selector.vhd" in Library work.
 Architecture behavioral of Entity selector is up to date.
-Compiling vhdl file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Register.vhd" in Library work.
+Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Register.vhd" in Library work.
 Architecture behavioral of Entity reg is up to date.
-Compiling vhdl file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Multiplier.vhd" in Library work.
+Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Multiplier.vhd" in Library work.
 Architecture behavioral of Entity multiplier is up to date.
-Compiling vhdl file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Adder.vhd" in Library work.
+Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Adder.vhd" in Library work.
 Architecture behavioral of Entity adder is up to date.
-Compiling vhdl file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/ActivationFunc.vhd" in Library work.
+Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/ActivationFunc.vhd" in Library work.
 Architecture behavioral of Entity activationfunc is up to date.
-Compiling vhdl file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Neuron.vhd" in Library work.
-Entity <neuron> compiled.
-Entity <neuron> (Architecture <behavioral>) compiled.
-Compiling vhdl file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Layer4.vhd" in Library work.
-Entity <Layer4> compiled.
-Entity <Layer4> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Neuron.vhd" in Library work.
+Architecture behavioral of Entity neuron is up to date.
+Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer4.vhd" in Library work.
+Entity <layer4> compiled.
+Entity <layer4> (Architecture <behavioral>) compiled.
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 2.81 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.44 secs
  
 --> 
 
-Total memory usage is 4511384 kilobytes
+Total memory usage is 4485360 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

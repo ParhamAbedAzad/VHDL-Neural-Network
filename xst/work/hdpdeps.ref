@@ -1,87 +1,88 @@
-V3 46
+V3 47
 FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/ActivationFunc.vhd" 2020/07/17.22:12:56 P.20131013
+EN work/ActivationFunc 1595193459 \
+      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/ActivationFunc.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/ActivationFunc/Behavioral 1595193460 \
+      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/ActivationFunc.vhd" \
+      EN work/ActivationFunc 1595193459
 FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Adder.vhd" 2020/07/17.22:11:23 P.20131013
-FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer1.vhd" 2020/07/17.23:08:33 P.20131013
-EN work/Layer1 1595011129 \
-      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer1.vhd" \
-      PB ieee/std_logic_1164 1381692176 PB work/Utility 1595178934
-AR work/Layer1/Behavioral 1595011130 \
-      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer1.vhd" \
-      EN work/Layer1 1595011129 CP Neuron
-FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer2.vhd" 2020/07/17.21:52:43 P.20131013
-EN work/Layer2 1595006590 \
-      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer2.vhd" \
-      PB ieee/std_logic_1164 1381692176 PB work/Utility 1595178934
-AR work/Layer2/Behavioral 1595006591 \
-      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer2.vhd" \
-      EN work/Layer2 1595006590 CP Neuron
-FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer3.vhd" 2020/07/17.21:54:06 P.20131013
-EN work/Layer3 1595006667 \
-      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer3.vhd" \
-      PB ieee/std_logic_1164 1381692176 PB work/Utility 1595178934
-AR work/Layer3/Behavioral 1595006668 \
-      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer3.vhd" \
-      EN work/Layer3 1595006667 CP Neuron
-FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Multiplier.vhd" 2020/07/17.22:11:01 P.20131013
-FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Neuron.vhd" 2020/07/17.23:08:28 P.20131013
-FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Register.vhd" 2020/07/17.22:10:44 P.20131013
-FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Selector.vhd" 2020/07/17.23:06:19 P.20131013
-FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Utility.vhd" 2020/07/17.23:06:46 P.20131013
-FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/ActivationFunc.vhd 2020/07/19.21:11:27 P.20131013
-EN work/ActivationFunc 1595178943 \
-      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/ActivationFunc.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/ActivationFunc/Behavioral 1595178944 \
-      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/ActivationFunc.vhd \
-      EN work/ActivationFunc 1595178943
-FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Adder.vhd 2020/07/19.21:11:27 P.20131013
-EN work/Adder 1595178941 \
-      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Adder.vhd \
+EN work/Adder 1595193457 \
+      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Adder.vhd" \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/Adder/Behavioral 1595178942 \
-      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Adder.vhd \
-      EN work/Adder 1595178941
-FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Layer4.vhd 2020/07/19.21:43:24 P.20131013
-EN work/Layer4 1595178947 \
-      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Layer4.vhd \
-      PB ieee/std_logic_1164 1381692176 PB work/Utility 1595178934
-AR work/Layer4/Behavioral 1595178948 \
-      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Layer4.vhd \
-      EN work/Layer4 1595178947 CP Neuron
-FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Multiplier.vhd 2020/07/19.21:11:27 P.20131013
-EN work/Multiplier 1595178939 \
-      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Multiplier.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/Multiplier/Behavioral 1595178940 \
-      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Multiplier.vhd \
-      EN work/Multiplier 1595178939
-FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Neuron.vhd 2020/07/19.21:44:54 P.20131013
-EN work/Neuron 1595178945 \
-      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Neuron.vhd \
-      PB ieee/std_logic_1164 1381692176 PB work/Utility 1595178934
-AR work/Neuron/Behavioral 1595178946 \
-      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Neuron.vhd \
-      EN work/Neuron 1595178945 CP Selector CP Reg CP Multiplier CP Adder \
+AR work/Adder/Behavioral 1595193458 \
+      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Adder.vhd" \
+      EN work/Adder 1595193457
+FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer1.vhd" 2020/07/20.01:43:23 P.20131013
+EN work/Layer1 1595193221 \
+      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer1.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB work/Utility 1595193450
+AR work/Layer1/Behavioral 1595193222 \
+      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer1.vhd" \
+      EN work/Layer1 1595193221 CP Neuron
+FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer2.vhd" 2020/07/20.01:44:36 P.20131013
+EN work/Layer2 1595193295 \
+      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer2.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB work/Utility 1595193450
+AR work/Layer2/Behavioral 1595193296 \
+      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer2.vhd" \
+      EN work/Layer2 1595193295 CP Neuron
+FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer3.vhd" 2020/07/20.01:45:41 P.20131013
+EN work/Layer3 1595193463 \
+      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer3.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB work/Utility 1595193450
+AR work/Layer3/Behavioral 1595193464 \
+      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer3.vhd" \
+      EN work/Layer3 1595193463 CP Neuron
+FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer4.vhd" 2020/07/20.01:47:18 P.20131013
+EN work/Layer4 1595193455 \
+      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer4.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB work/Utility 1595193450
+AR work/Layer4/Behavioral 1595193456 \
+      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer4.vhd" \
+      EN work/Layer4 1595193455 CP Neuron
+FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Multiplier.vhd" 2020/07/20.01:03:38 P.20131013
+EN work/Multiplier 1595193455 \
+      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Multiplier.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_SIGNED 1381692178
+AR work/Multiplier/Behavioral 1595193456 \
+      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Multiplier.vhd" \
+      EN work/Multiplier 1595193455
+FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Neuron.vhd" 2020/07/20.01:03:38 P.20131013
+EN work/Neuron 1595193461 \
+      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Neuron.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB work/Utility 1595193450
+AR work/Neuron/Behavioral 1595193462 \
+      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Neuron.vhd" \
+      EN work/Neuron 1595193461 CP Selector CP Reg CP Multiplier CP Adder \
       CP ActivationFunc
-FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Register.vhd 2020/07/19.21:11:27 P.20131013
-EN work/Reg 1595178937 \
-      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Register.vhd \
+FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Register.vhd" 2020/07/17.22:10:44 P.20131013
+EN work/Reg 1595193453 \
+      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Register.vhd" \
       PB ieee/std_logic_1164 1381692176
-AR work/Reg/Behavioral 1595178938 \
-      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Register.vhd \
-      EN work/Reg 1595178937
-FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Selector.vhd 2020/07/19.21:11:27 P.20131013
-EN work/Selector 1595178935 \
-      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Selector.vhd \
+AR work/Reg/Behavioral 1595193454 \
+      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Register.vhd" \
+      EN work/Reg 1595193453
+FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Selector.vhd" 2020/07/17.23:06:19 P.20131013
+EN work/Selector 1595193451 \
+      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Selector.vhd" \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
-      PB work/Utility 1595178934
-AR work/Selector/Behavioral 1595178936 \
-      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Selector.vhd \
-      EN work/Selector 1595178935
-FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Utility.vhd 2020/07/19.21:11:27 P.20131013
-PH work/Utility 1595178933 \
-      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Utility.vhd \
+      PB work/Utility 1595193450
+AR work/Selector/Behavioral 1595193452 \
+      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Selector.vhd" \
+      EN work/Selector 1595193451
+FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Utility.vhd" 2020/07/17.23:06:46 P.20131013
+PH work/Utility 1595193449 \
+      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Utility.vhd" \
       PB ieee/std_logic_1164 1381692176
-PB work/Utility 1595178934 \
-      FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Utility.vhd \
-      PH work/Utility 1595178933
+PB work/Utility 1595193450 \
+      FL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Utility.vhd" \
+      PH work/Utility 1595193449
+FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/ActivationFunc.vhd 2020/07/19.21:11:27 P.20131013
+FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Adder.vhd 2020/07/19.21:11:27 P.20131013
+FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Layer4.vhd 2020/07/19.21:43:24 P.20131013
+FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Multiplier.vhd 2020/07/19.21:11:27 P.20131013
+FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Neuron.vhd 2020/07/19.21:44:54 P.20131013
+FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Register.vhd 2020/07/19.21:11:27 P.20131013
+FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Selector.vhd 2020/07/19.21:11:27 P.20131013
+FL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Utility.vhd 2020/07/19.21:11:27 P.20131013
