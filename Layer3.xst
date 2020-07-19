@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Asus/Desktop/FPGA nueral/neural-network/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Asus/Desktop/FPGA nueral/neural-network/xst"
+elaborate
+-ifn Layer3.prj
+-ifmt mixed

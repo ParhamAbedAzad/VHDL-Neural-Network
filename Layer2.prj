@@ -1,0 +1,8 @@
+vhdl work "Utility.vhd"
+vhdl work "Selector.vhd"
+vhdl work "Register.vhd"
+vhdl work "Multiplier.vhd"
+vhdl work "Adder.vhd"
+vhdl work "ActivationFunc.vhd"
+vhdl work "Neuron.vhd"
+vhdl work "Layer2.vhd"

@@ -1,0 +1,1 @@
+vhdtdtfi -prj NeuralNetwork -o "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer1.vhi" -module Layer1 -template D:/ISE/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Utility.vhd -lib work Layer1.vhd 
