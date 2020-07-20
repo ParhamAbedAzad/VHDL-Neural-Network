@@ -48,7 +48,7 @@ if rising_edge(Clk) then
 			WRST4 <= '0';
 			reseting <= '1';
 			Counter2 := 0;
-		counter2 <= counter2 + 1;
+		counter2 := counter2 + 1;
 		end if;
 	elsif rst='1' or WRST='1' then
 		DONE <= '0';
@@ -57,7 +57,7 @@ if rising_edge(Clk) then
 		en2 <= '0';
 		en3 <= '0';
 		if(WRST='1') then
-			reseting := '1';
+			reseting <= '1';
 		end if;
 	elsif Counter < 15 then
 		if Counter = 1 then
@@ -73,7 +73,7 @@ if rising_edge(Clk) then
 			en4 <= '0';
 			done <= '1';
 		end if;
-	Counter <= Counter+1;
+	Counter := Counter+1;
 	end if;
 end if;
 end process;

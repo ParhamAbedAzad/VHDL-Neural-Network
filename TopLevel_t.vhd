@@ -1,9 +1,9 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
-ENTITY Lights_t IS
-END Lights_t;
+ENTITY TopLevel_t IS
+END TopLevel_t;
  
-ARCHITECTURE behavior OF Lights_t IS 
+ARCHITECTURE behavior OF TopLevel_t IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
@@ -19,7 +19,7 @@ ARCHITECTURE behavior OF Lights_t IS
 
    --Inputs
    signal clk : std_logic := '0';
-   signal inp : STD_LOGIC_VECTOR (31 downto 0);
+   signal inp : STD_LOGIC_VECTOR (31 downto 0) := to_signed(2, inp'length);
    signal weight : STD_LOGIC_VECTOR (31 downto 0);
    signal WRst : std_logic := '0';
 

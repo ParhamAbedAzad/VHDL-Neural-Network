@@ -22,7 +22,7 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="NeuralNetwork.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
-    <file xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Adder.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Adder.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Adder.xst"/>
@@ -39,15 +39,29 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Layer4.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Layer4.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Layer4.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Layer4_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Neuron.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Neuron.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Neuron.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Selector.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Selector.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Selector.xst"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TopLevel.prj"/>
-    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="TopLevel.stx"/>
-    <file xil_pn:fileType="FILE_XST" xil_pn:name="TopLevel.xst"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="TopLevel.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="TopLevel.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="TopLevel.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="TopLevel.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TopLevel.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="TopLevel.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="TopLevel.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="TopLevel.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="TopLevel_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TopLevel_t_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TopLevel_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="TopLevel_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
@@ -56,12 +70,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1595230354" xil_pn:in_ck="-6095779941858561101" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1595230354">
+    <transform xil_pn:end_ts="1595233483" xil_pn:in_ck="-48577865631776575" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1595233483">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ActivationFunc.vhd"/>
@@ -76,19 +89,69 @@
       <outfile xil_pn:name="Register.vhd"/>
       <outfile xil_pn:name="Selector.vhd"/>
       <outfile xil_pn:name="TopLevel.vhd"/>
+      <outfile xil_pn:name="TopLevel_t.vhd"/>
       <outfile xil_pn:name="Utility.vhd"/>
     </transform>
     <transform xil_pn:end_ts="1595230354" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-9044832904953873877" xil_pn:start_ts="1595230354">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1595230354" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="4900216971465268963" xil_pn:start_ts="1595230354">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1595230354" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="6232483123857315077" xil_pn:start_ts="1595230354">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1595233884" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1595233884">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1595233884" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="3295241431160986470" xil_pn:start_ts="1595233884">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1595233884" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="6232483123857315077" xil_pn:start_ts="1595233884">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1595233884" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1595233884">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1595233884" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-5194345341724797266" xil_pn:start_ts="1595233884">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1595233884" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-6388418249795389316" xil_pn:start_ts="1595233884">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1595233884" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="4986787597531336975" xil_pn:start_ts="1595233884">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1595234071" xil_pn:in_ck="-6095779941858561101" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="-8800546119814691729" xil_pn:start_ts="1595234006">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="TopLevel.lso"/>
+      <outfile xil_pn:name="TopLevel.ngc"/>
+      <outfile xil_pn:name="TopLevel.ngr"/>
+      <outfile xil_pn:name="TopLevel.prj"/>
+      <outfile xil_pn:name="TopLevel.stx"/>
+      <outfile xil_pn:name="TopLevel.syr"/>
+      <outfile xil_pn:name="TopLevel.xst"/>
+      <outfile xil_pn:name="TopLevel_t_stx_beh.prj"/>
+      <outfile xil_pn:name="TopLevel_vhdl.prj"/>
+      <outfile xil_pn:name="TopLevel_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
     </transform>
   </transforms>
 

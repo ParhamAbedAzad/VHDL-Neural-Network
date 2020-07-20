@@ -3,10 +3,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 use work.Utility.all;
  
 entity Neuron is
-generic (k: integer :=10
+generic (Ks: integer :=10
 				);
-    Port ( I : in  myArray(0 to k-1);
-           W : in  myArray(0 to k-1);
+    Port ( I : in  myArray(0 to Ks-1);
+           W : in  myArray(0 to Ks-1);
 			  BiasIn : in  STD_LOGIC_VECTOR (31 downto 0);
            clk : in  STD_LOGIC;
 			  Rst :  in  STD_LOGIC;
@@ -25,7 +25,7 @@ component Adder
 			  end component; 
 component Multiplier 
 			generic (width : integer := 32;
-				point: integer :=6);
+				point: integer :=16);
     Port ( inp1 : in  STD_LOGIC_VECTOR (width-1 downto 0);
            inp2 : in  STD_LOGIC_VECTOR (width-1 downto 0);
            outp : out  STD_LOGIC_VECTOR (width-1 downto 0));
@@ -38,7 +38,7 @@ component Reg
            outp : out  STD_LOGIC_VECTOR (width-1 downto 0));
 			  end component; 
 component Selector 
-			generic (n: integer :=k
+			generic (n: integer :=Ks
 				);
 			port (I : in  myArray(0 to n-1);
            W : in  myArray(0 to n-1);
@@ -55,7 +55,7 @@ signal MultOut: STD_LOGIC_VECTOR(31 downto 0);
 signal OutTemp: STD_LOGIC_VECTOR(31 downto 0);
 signal ActiveEn: STD_LOGIC := '0';
 signal RegEn: STD_LOGIC := '1';
-signal SelectSig: integer range 0 to k := k;
+signal SelectSig: integer range 0 to Ks := Ks;
 begin
 Cs: Selector port map(I,W,SelectSig , I1,W1);
 Cr: Reg port map (Acc,clk,RegEn,AccTemp);
@@ -64,7 +64,7 @@ Ca: Adder port map (MultOut,Acc,AccTemp);
 Caf: ActivationFunc port map (Acc,OutTemp);
 outp <= OutTemp when ActiveEn='1';
 process(clk)
-variable Counter : integer range 0 to k+1 := 0;
+variable Counter : integer range 0 to Ks+1 := 0;
 begin
 	if rising_edge(Clk) then
 	if(rst='1') then
@@ -72,12 +72,12 @@ begin
 		ActiveEn <= '0';
 		RegEn <= '1';
 		Acc <= BiasIn;
-		selectSig <= k;
+		selectSig <= Ks;
 	else
-	if Counter<k then
+	if Counter<Ks then
 		SelectSig <= Counter;
 		Counter := Counter+1;
-	elsif Counter = k then
+	elsif Counter = Ks then
 		ActiveEn <= '1';
 		RegEn <= '0';
 		SelectSig <= Counter;
