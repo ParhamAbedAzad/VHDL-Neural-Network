@@ -7,6 +7,7 @@ entity Controller is
            en1 : out  STD_LOGIC;
            en2 : out  STD_LOGIC;
            en3 : out  STD_LOGIC;
+           en4 : out  STD_LOGIC;
 			  done : out STD_LOGIC := '1';
 			  WRST1 : out STD_LOGIC := '0';
 			  WRST2 : out STD_LOGIC := '0';
@@ -20,6 +21,10 @@ constant clkNum1 : integer := 8;
 constant clkNum2 : integer := 8;
 constant clkNum3 : integer := 8;
 constant clkNum4 : integer := 8;
+constant CalClkNum1 : integer := 2;
+constant CalClkNum2 : integer := 8;
+constant CalClkNum3 : integer := 8;
+constant CalClkNum4 : integer := 8;
 signal reseting : std_logic := '0';
 begin
 process(clk)
@@ -54,18 +59,21 @@ if rising_edge(Clk) then
 		if(WRST='1') then
 			reseting := '1';
 		end if;
-	elsif Counter < 12 then
-	Counter <= Counter+1;
-		if Counter = 4 then
+	elsif Counter < 15 then
+		if Counter = 1 then
 			en1 <= '0';
 			en2 <= '1';
-		elsif Counter = 9 then
+		elsif Counter = 5 then
 			en2 <= '0';
 			en3 <= '1';
-		elsif Counter = 12 then
+		elsif Counter = 10 then
 			en3 <= '0';
-			DONE <= '1';
+			en4 <= '1';
+		elsif Counter = 13 then
+			en4 <= '0';
+			done <= '1';
 		end if;
+	Counter <= Counter+1;
 	end if;
 end if;
 end process;

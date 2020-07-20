@@ -6,7 +6,7 @@ entity TopLevel is
            inp : in  STD_LOGIC_VECTOR (31 downto 0);
            weight : in  STD_LOGIC_VECTOR (31 downto 0);
            WRst : in  STD_LOGIC;
-			  done : in STD_LOGIC;
+			  done : out STD_LOGIC;
            outp : out  STD_LOGIC_VECTOR (31 downto 0));
 end TopLevel;
 
@@ -52,7 +52,8 @@ component Controller
 			  rst : in STD_LOGIC;
            en1 : out  STD_LOGIC;
            en2 : out  STD_LOGIC;
-           en3 : out  STD_LOGIC);
+           en3 : out  STD_LOGIC;
+           en4 : out  STD_LOGIC);
 	end component;
 signal Connection2: myArray (0 to 3);
 signal Connection3: myArray (0 to 4);
@@ -63,7 +64,7 @@ Lr1: Layer1 port map (Inp,en1,clk,rst,RSTW1,weight,Connection2);
 Lr2: Layer2 port map (Connection2,en2,clk,rst,RSTW2,weight,Connection3);
 Lr3: Layer3 port map (Connection3,en3,clk,rst,RSTW3,weight,Connection4);
 Lr4: Layer4 port map (Connection4,en4,clk,rst,RSTW4,weight,OUTP);
-Cntr: Controller port map(WRST,CLK,RST,En1,En2,En3);
+Cntr: Controller port map(WRST,CLK,RST,En1,En2,En3,En4);
 
 end Behavioral;
 

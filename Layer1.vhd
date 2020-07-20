@@ -18,7 +18,7 @@ end Layer1;
  
  
 architecture Behavioral of Layer1 is
-	component Neuron	
+	component Neuron
 	generic (Ks: integer :=k);
 			Port (I : in  myArray(0 to Ks-1);
 					W : in  myArray(0 to Ks-1);

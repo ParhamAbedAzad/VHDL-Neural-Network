@@ -1,22 +1,23 @@
-EN adder NULL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Adder.vhd" sub00/vhpl00 1595193457
-AR neuron behavioral "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Neuron.vhd" sub00/vhpl05 1595193462
-AR reg behavioral "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Register.vhd" sub00/vhpl09 1595193454
-EN neuron NULL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Neuron.vhd" sub00/vhpl04 1595193461
-PB utility utility "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Utility.vhd" sub00/vhpl03 1595193450
-EN activationfunc NULL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/ActivationFunc.vhd" sub00/vhpl12 1595193459
-AR layer4 behavioral "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer4.vhd" sub00/vhpl21 1595193456
-EN selector NULL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Selector.vhd" sub00/vhpl06 1595193451
-EN multiplier NULL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Multiplier.vhd" sub00/vhpl10 1595193455
-AR layer2 behavioral "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer2.vhd" sub00/vhpl17 1595193296
-EN layer1 NULL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer1.vhd" sub00/vhpl14 1595193221
-EN layer2 NULL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer2.vhd" sub00/vhpl16 1595193295
-EN layer3 NULL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer3.vhd" sub00/vhpl18 1595193463
-EN layer4 NULL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer4.vhd" sub00/vhpl20 1595193455
-AR activationfunc behavioral "C:/Users/Asus/Desktop/FPGA nueral/neural-network/ActivationFunc.vhd" sub00/vhpl13 1595193460
-PH utility NULL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Utility.vhd" sub00/vhpl02 1595193449
-AR multiplier behavioral "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Multiplier.vhd" sub00/vhpl11 1595193456
-AR selector behavioral "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Selector.vhd" sub00/vhpl07 1595193452
-AR adder behavioral "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Adder.vhd" sub00/vhpl01 1595193458
-AR layer3 behavioral "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer3.vhd" sub00/vhpl19 1595193464
-EN reg NULL "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Register.vhd" sub00/vhpl08 1595193453
-AR layer1 behavioral "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer1.vhd" sub00/vhpl15 1595193222
+EN adder NULL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Adder.vhd sub00/vhpl00 1595231423
+AR neuron behavioral C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Neuron.vhd sub00/vhpl05 1595231428
+AR reg behavioral C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Register.vhd sub00/vhpl09 1595231420
+EN neuron NULL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Neuron.vhd sub00/vhpl04 1595231427
+PB utility utility C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Utility.vhd sub00/vhpl03 1595231416
+EN activationfunc NULL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/ActivationFunc.vhd sub00/vhpl12 1595231425
+AR layer4 behavioral C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Layer4.vhd sub00/vhpl21 1595231436
+EN selector NULL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Selector.vhd sub00/vhpl06 1595231417
+EN multiplier NULL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Multiplier.vhd sub00/vhpl10 1595231421
+AR layer2 behavioral C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Layer2.vhd sub00/vhpl17 1595231432
+EN layer1 NULL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Layer1.vhd sub00/vhpl14 1595231429
+EN layer2 NULL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Layer2.vhd sub00/vhpl16 1595231431
+EN layer3 NULL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Layer3.vhd sub00/vhpl18 1595231433
+EN layer4 NULL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Layer4.vhd sub00/vhpl20 1595231435
+AR activationfunc behavioral C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/ActivationFunc.vhd sub00/vhpl13 1595231426
+PH utility NULL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Utility.vhd sub00/vhpl02 1595231415
+AR multiplier behavioral C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Multiplier.vhd sub00/vhpl11 1595231422
+AR selector behavioral C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Selector.vhd sub00/vhpl07 1595231418
+AR adder behavioral C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Adder.vhd sub00/vhpl01 1595231424
+EN controller NULL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Controller.vhd sub00/vhpl22 1595231437
+AR layer3 behavioral C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Layer3.vhd sub00/vhpl19 1595231434
+EN reg NULL C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Register.vhd sub00/vhpl08 1595231419
+AR layer1 behavioral C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Layer1.vhd sub00/vhpl15 1595231430

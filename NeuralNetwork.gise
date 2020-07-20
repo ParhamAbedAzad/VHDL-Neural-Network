@@ -45,9 +45,51 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Selector.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Selector.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Selector.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TopLevel.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="TopLevel.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="TopLevel.xst"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1595230354" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1595230354">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1595230354" xil_pn:in_ck="-6095779941858561101" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1595230354">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ActivationFunc.vhd"/>
+      <outfile xil_pn:name="Adder.vhd"/>
+      <outfile xil_pn:name="Controller.vhd"/>
+      <outfile xil_pn:name="Layer1.vhd"/>
+      <outfile xil_pn:name="Layer2.vhd"/>
+      <outfile xil_pn:name="Layer3.vhd"/>
+      <outfile xil_pn:name="Layer4.vhd"/>
+      <outfile xil_pn:name="Multiplier.vhd"/>
+      <outfile xil_pn:name="Neuron.vhd"/>
+      <outfile xil_pn:name="Register.vhd"/>
+      <outfile xil_pn:name="Selector.vhd"/>
+      <outfile xil_pn:name="TopLevel.vhd"/>
+      <outfile xil_pn:name="Utility.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1595230354" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-9044832904953873877" xil_pn:start_ts="1595230354">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1595230354" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="4900216971465268963" xil_pn:start_ts="1595230354">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1595230354" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="6232483123857315077" xil_pn:start_ts="1595230354">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+  </transforms>
 
 </generated_project>
