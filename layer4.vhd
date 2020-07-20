@@ -41,8 +41,8 @@ variable Counter_Y : integer range 0 to 255 := 0;
 variable Counter_B : integer range 0 to 255 := 0;
 variable rst_weight_en : STD_LOGIC;
 begin
-
---weights1 <= (("00000000.00000000", "00000000000000"),("000000000000000", "0011111110000000"));
+--				  0000000000000000.1111111111111111
+--weights1 <= ("00000000000000010011100010100000", "11111111111111110101010101110100","000000000000000");
 
 if rising_edge(clk) then
 	if(rst_weights='1') then
