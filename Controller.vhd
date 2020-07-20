@@ -29,14 +29,18 @@ begin
 if rising_edge(Clk) then
 	if reseting='1' then
 		if(Counter2 < clkNum1) then
-		
+			WRST1 <= '1';
 		elsif(Counter2 < clkNum2) then
-		
+			WRST1 <= '0';
+			WRST2 <= '1';
 		elsif(Counter2 < clkNum3) then
-		
+			WRST2 <= '0';
+			WRST3 <= '1';
 		elsif(Counter2 < clkNum4) then
-		
+			WRST3 <= '0';
+			WRST4 <= '1';
 		else
+			WRST4 <= '0';
 			reseting <= '1';
 			Counter2 := 0;
 		counter2 <= counter2 + 1;
@@ -47,7 +51,9 @@ if rising_edge(Clk) then
 		en1 <= '0';
 		en2 <= '0';
 		en3 <= '0';
-		reseting := '1';
+		if(WRST='1') then
+			reseting := '1';
+		end if;
 	elsif Counter < 12 then
 	Counter <= Counter+1;
 		if Counter = 4 then
