@@ -7,7 +7,12 @@ entity Controller is
            en1 : out  STD_LOGIC;
            en2 : out  STD_LOGIC;
            en3 : out  STD_LOGIC;
-			  done : out STD_LOGIC := '1');
+			  done : out STD_LOGIC := '1';
+			  WRST1 : out STD_LOGIC := '0';
+			  WRST2 : out STD_LOGIC := '0';
+			  WRST3 : out STD_LOGIC := '0';
+			  WRST4 : out STD_LOGIC := '0'
+			  );
 end Controller;
 
 architecture Behavioral of Controller is
@@ -15,7 +20,7 @@ constant clkNum1 : integer := 8;
 constant clkNum2 : integer := 8;
 constant clkNum3 : integer := 8;
 constant clkNum4 : integer := 8;
-signal reseting : std_logic;
+signal reseting : std_logic := '0';
 begin
 process(clk)
 variable Counter : integer range 0 to 15 := 0;--4+5+3+1
@@ -23,8 +28,19 @@ variable Counter2 : integer range 0 to 255 := 0;--4+5+3+1
 begin
 if rising_edge(Clk) then
 	if reseting='1' then
+		if(Counter2 < clkNum1) then
 		
+		elsif(Counter2 < clkNum2) then
+		
+		elsif(Counter2 < clkNum3) then
+		
+		elsif(Counter2 < clkNum4) then
+		
+		else
+			reseting <= '1';
+			Counter2 := 0;
 		counter2 <= counter2 + 1;
+		end if;
 	elsif rst='1' or WRST='1' then
 		DONE <= '0';
 		Counter := 0;
