@@ -28,11 +28,11 @@ architecture Behavioral of Layer1 is
 					outp : out  STD_LOGIC_VECTOR (31 downto 0));
 	end component; 
  
-signal weights1: myArray (0 to k-1);
-signal weights2: myArray (0 to k-1);
-signal weights3: myArray (0 to k-1);
-signal weights4: myArray (0 to k-1);
-signal biases: myArray (0 to n-1);
+signal weights1: myArray (0 to k-1):= (others => "00000000000000001100111001111101");
+signal weights2: myArray (0 to k-1):= (others => "00000000000000001001110111110011");
+signal weights3: myArray (0 to k-1):= (others => "11111111111111100110011000001011");
+signal weights4: myArray (0 to k-1):= (others => "11111111111111100110011000001011");
+signal biases: myArray (0 to n-1) := ("00000000000000001100111001111101","00000000000000001100111001111101","00000000000000001100111001111101","00000000000000001100111001111101");
 
 begin
 Nr1: Neuron port map (I,weights1,biases(0),clk,rst,O(0));
@@ -47,11 +47,6 @@ variable Counter_B : integer range 0 to 255 := 0;
 variable rst_weight_en : STD_LOGIC;
 begin
 
-weights1 <= ("00000000000000001100111001111101");
-weights2 <= ("00000000000000001001110111110011");
-weights3 <= ("11111111111111100110011000001011");
-weights4 <= ("11111111111111100110011000001011");
-biases <= ("00000000000000001100111001111101","00000000000000001100111001111101","00000000000000001100111001111101","00000000000000001100111001111101");
 if rising_edge(clk) then
 	if(rst_weights='1') then
 		rst_weight_en:='1';
