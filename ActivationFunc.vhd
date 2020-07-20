@@ -8,7 +8,7 @@ end ActivationFunc;
 architecture Behavioral of ActivationFunc is
 constant zero : STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
 begin
-outp <= inp ;
+outp <= inp;
 
 end Behavioral;
 

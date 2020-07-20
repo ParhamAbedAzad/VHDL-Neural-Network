@@ -47,7 +47,10 @@ variable Counter_B : integer range 0 to 255 := 0;
 variable rst_weight_en : STD_LOGIC;
 begin
 
---weights1 <= (("00000000.00000000", "00000000000000"),("000000000000000", "0011111110000000"));
+weights1 <= ("00000000000000001100111001111101");
+weights2 <= ("00000000000000001001110111110011");
+weights3 <= ("11111111111111100110011000001011");
+weights4 <= ("11111111111111100110011000001011");
 
 if rising_edge(clk) then
 	if(rst_weights='1') then
