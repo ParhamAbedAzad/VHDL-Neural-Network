@@ -1,0 +1,28 @@
+Command line:
+   Layer4_t_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52157
+
+Tue Jul 21 04:48:57 2020
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 5173.83 Meg
+
+ Total Signals          : 45
+ Total Nets             : 551
+ Total Signal Drivers   : 14
+ Total Blocks           : 12
+ Total Primitive Blocks : 9
+ Total Processes        : 11
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 969
+
+ Total Simulation Time: 0.109375 sec
+
+ Current Memory Usage: 4701.97 Meg
+
+Tue Jul 21 05:15:38 2020
+

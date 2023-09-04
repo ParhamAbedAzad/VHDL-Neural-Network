@@ -1,0 +1,8 @@
+vhdl isim_temp "Utility.vhd"
+vhdl isim_temp "Selector.vhd"
+vhdl isim_temp "Register.vhd"
+vhdl isim_temp "Multiplier.vhd"
+vhdl isim_temp "Adder.vhd"
+vhdl isim_temp "ActivationFunc.vhd"
+vhdl isim_temp "Neuron.vhd"
+vhdl isim_temp "Layer4.vhd"

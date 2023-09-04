@@ -1,0 +1,1420 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Reading design: TopLevel.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TopLevel.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TopLevel"
+Output Format                      : NGC
+Target Device                      : xc3s400-5-pq208
+
+---- Source Options
+Top Module Name                    : TopLevel
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Utility.vhd" in Library work.
+Architecture utility of Entity utility is up to date.
+Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Selector.vhd" in Library work.
+Architecture behavioral of Entity selector is up to date.
+Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Multiplier.vhd" in Library work.
+Architecture behavioral of Entity multiplier is up to date.
+Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Adder.vhd" in Library work.
+Architecture behavioral of Entity adder is up to date.
+Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/ActivationFunc.vhd" in Library work.
+Architecture behavioral of Entity activationfunc is up to date.
+Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/ActivationFunction2.vhd" in Library work.
+Architecture behavioral of Entity activationfunc2 is up to date.
+Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Neuron.vhd" in Library work.
+Architecture behavioral of Entity neuron is up to date.
+Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Neuron2.vhd" in Library work.
+Architecture behavioral of Entity neuron2 is up to date.
+Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer1.vhd" in Library work.
+Entity <layer1> compiled.
+Entity <layer1> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer2.vhd" in Library work.
+Entity <layer2> compiled.
+Entity <layer2> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer3.vhd" in Library work.
+Entity <layer3> compiled.
+Entity <layer3> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer4.vhd" in Library work.
+Entity <layer4> compiled.
+Entity <layer4> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Controller.vhd" in Library work.
+Architecture behavioral of Entity controller is up to date.
+Compiling vhdl file "C:/Users/Asus/Desktop/FPGA nueral/neural-network/TopLevel.vhd" in Library work.
+Architecture behavioral of Entity toplevel is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <TopLevel> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Layer1> in library <work> (architecture <behavioral>) with generics.
+	k = 1
+	n = 4
+
+Analyzing hierarchy for entity <Layer2> in library <work> (architecture <behavioral>) with generics.
+	k = 4
+	n = 5
+
+Analyzing hierarchy for entity <Layer3> in library <work> (architecture <behavioral>) with generics.
+	k = 5
+	n = 3
+
+Analyzing hierarchy for entity <Layer4> in library <work> (architecture <behavioral>) with generics.
+	k = 3
+	n = 1
+
+Analyzing hierarchy for entity <Controller> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Neuron2> in library <work> (architecture <behavioral>) with generics.
+	Ks = 1
+
+Analyzing hierarchy for entity <Neuron2> in library <work> (architecture <behavioral>) with generics.
+	Ks = 4
+
+Analyzing hierarchy for entity <Neuron2> in library <work> (architecture <behavioral>) with generics.
+	Ks = 5
+
+Analyzing hierarchy for entity <Neuron> in library <work> (architecture <behavioral>) with generics.
+	Ks = 3
+
+Analyzing hierarchy for entity <Selector> in library <work> (architecture <behavioral>) with generics.
+	n = 1
+
+Analyzing hierarchy for entity <Multiplier> in library <work> (architecture <behavioral>) with generics.
+	point = 16
+	width = 32
+
+Analyzing hierarchy for entity <Adder> in library <work> (architecture <behavioral>) with generics.
+	width = 32
+
+Analyzing hierarchy for entity <ActivationFunc2> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Selector> in library <work> (architecture <behavioral>) with generics.
+	n = 4
+
+Analyzing hierarchy for entity <Selector> in library <work> (architecture <behavioral>) with generics.
+	n = 5
+
+Analyzing hierarchy for entity <Selector> in library <work> (architecture <behavioral>) with generics.
+	n = 3
+
+Analyzing hierarchy for entity <ActivationFunc> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <TopLevel> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/Asus/Desktop/FPGA nueral/neural-network/TopLevel.vhd" line 81: Unconnected output port 'WRST4' of component 'Controller'.
+Entity <TopLevel> analyzed. Unit <TopLevel> generated.
+
+Analyzing generic Entity <Layer1> in library <work> (Architecture <behavioral>).
+	k = 1
+	n = 4
+INFO:Xst:1433 - Contents of array <biases> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Entity <Layer1> analyzed. Unit <Layer1> generated.
+
+Analyzing generic Entity <Neuron2.1> in library <work> (Architecture <behavioral>).
+	Ks = 1
+Entity <Neuron2.1> analyzed. Unit <Neuron2.1> generated.
+
+Analyzing generic Entity <Selector.1> in library <work> (Architecture <behavioral>).
+	n = 1
+Entity <Selector.1> analyzed. Unit <Selector.1> generated.
+
+Analyzing generic Entity <Multiplier> in library <work> (Architecture <behavioral>).
+	point = 16
+	width = 32
+Entity <Multiplier> analyzed. Unit <Multiplier> generated.
+
+Analyzing generic Entity <Adder> in library <work> (Architecture <behavioral>).
+	width = 32
+Entity <Adder> analyzed. Unit <Adder> generated.
+
+Analyzing Entity <ActivationFunc2> in library <work> (Architecture <behavioral>).
+Entity <ActivationFunc2> analyzed. Unit <ActivationFunc2> generated.
+
+Analyzing generic Entity <Layer2> in library <work> (Architecture <behavioral>).
+	k = 4
+	n = 5
+INFO:Xst:1433 - Contents of array <biases> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <weights1> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <weights2> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <weights3> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <weights4> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <weights4> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Entity <Layer2> analyzed. Unit <Layer2> generated.
+
+Analyzing generic Entity <neuron2.2> in library <work> (Architecture <behavioral>).
+	Ks = 4
+Entity <neuron2.2> analyzed. Unit <neuron2.2> generated.
+
+Analyzing generic Entity <Selector.2> in library <work> (Architecture <behavioral>).
+	n = 4
+Entity <Selector.2> analyzed. Unit <Selector.2> generated.
+
+Analyzing generic Entity <Layer3> in library <work> (Architecture <behavioral>).
+	k = 5
+	n = 3
+INFO:Xst:1433 - Contents of array <biases> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <weights1> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <weights2> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <weights3> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Entity <Layer3> analyzed. Unit <Layer3> generated.
+
+Analyzing generic Entity <neuron2.3> in library <work> (Architecture <behavioral>).
+	Ks = 5
+Entity <neuron2.3> analyzed. Unit <neuron2.3> generated.
+
+Analyzing generic Entity <Selector.3> in library <work> (Architecture <behavioral>).
+	n = 5
+Entity <Selector.3> analyzed. Unit <Selector.3> generated.
+
+Analyzing generic Entity <Layer4> in library <work> (Architecture <behavioral>).
+	k = 3
+	n = 1
+INFO:Xst:1433 - Contents of array <weights1> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Entity <Layer4> analyzed. Unit <Layer4> generated.
+
+Analyzing generic Entity <Neuron> in library <work> (Architecture <behavioral>).
+	Ks = 3
+Entity <Neuron> analyzed. Unit <Neuron> generated.
+
+Analyzing generic Entity <Selector.4> in library <work> (Architecture <behavioral>).
+	n = 3
+Entity <Selector.4> analyzed. Unit <Selector.4> generated.
+
+Analyzing Entity <ActivationFunc> in library <work> (Architecture <behavioral>).
+Entity <ActivationFunc> analyzed. Unit <ActivationFunc> generated.
+
+Analyzing Entity <Controller> in library <work> (Architecture <behavioral>).
+INFO:Xst:2679 - Register <WRST4> in unit <Controller> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <en4> in unit <Controller> has a constant value of 1 during circuit operation. The register is replaced by logic.
+Entity <Controller> analyzed. Unit <Controller> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Controller>.
+    Related source file is "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Controller.vhd".
+WARNING:Xst:1305 - Output <WRST3> is never assigned. Tied to value 0.
+    Using one-hot encoding for signal <Counter2>.
+    Found 1-bit register for signal <WRST1>.
+    Found 1-bit register for signal <WRST2>.
+    Found 1-bit register for signal <en1>.
+    Found 1-bit register for signal <en2>.
+    Found 1-bit register for signal <en3>.
+    Found 1-bit register for signal <done>.
+    Found 4-bit up counter for signal <Counter>.
+    Found 4-bit register for signal <Counter2>.
+    Found 4-bit comparator greatequal for signal <en1$cmp_ge0000> created at line 56.
+    Found 1-bit register for signal <reseting>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  11 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Controller> synthesized.
+
+
+Synthesizing Unit <Selector_1>.
+    Related source file is "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Selector.vhd".
+Unit <Selector_1> synthesized.
+
+
+Synthesizing Unit <Multiplier>.
+    Related source file is "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Multiplier.vhd".
+WARNING:Xst:646 - Signal <temp<63:48>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <temp<15:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32x32-bit multiplier for signal <temp>.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <Multiplier> synthesized.
+
+
+Synthesizing Unit <Adder>.
+    Related source file is "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Adder.vhd".
+    Found 32-bit adder for signal <outp>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Adder> synthesized.
+
+
+Synthesizing Unit <ActivationFunc2>.
+    Related source file is "C:/Users/Asus/Desktop/FPGA nueral/neural-network/ActivationFunction2.vhd".
+    Found 32-bit 4-to-1 multiplexer for signal <outp>.
+    Found 32-bit comparator less for signal <outp$cmp_lt0000> created at line 11.
+    Summary:
+	inferred   1 Comparator(s).
+	inferred  32 Multiplexer(s).
+Unit <ActivationFunc2> synthesized.
+
+
+Synthesizing Unit <Selector_2>.
+    Related source file is "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Selector.vhd".
+    Found 3-bit comparator less for signal <OutI$cmp_lt0000> created at line 17.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <Selector_2> synthesized.
+
+
+Synthesizing Unit <Selector_3>.
+    Related source file is "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Selector.vhd".
+    Found 3-bit comparator less for signal <OutI$cmp_lt0000> created at line 17.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <Selector_3> synthesized.
+
+
+Synthesizing Unit <Selector_4>.
+    Related source file is "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Selector.vhd".
+    Found 2-bit comparator less for signal <OutI$cmp_lt0000> created at line 17.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <Selector_4> synthesized.
+
+
+Synthesizing Unit <ActivationFunc>.
+    Related source file is "C:/Users/Asus/Desktop/FPGA nueral/neural-network/ActivationFunc.vhd".
+Unit <ActivationFunc> synthesized.
+
+
+Synthesizing Unit <Neuron2_1>.
+    Related source file is "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Neuron2.vhd".
+WARNING:Xst:737 - Found 32-bit latch for signal <outp>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit register for signal <Acc>.
+    Found 2-bit comparator less for signal <Acc$cmp_lt0000> created at line 79.
+    Found 32-bit 4-to-1 multiplexer for signal <Acc$mux0000>.
+    Found 1-bit register for signal <ActiveEn>.
+    Found 2-bit up counter for signal <Counter>.
+    Found 1-bit register for signal <SelectSig<0>>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  34 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  32 Multiplexer(s).
+Unit <Neuron2_1> synthesized.
+
+
+Synthesizing Unit <neuron2_2>.
+    Related source file is "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Neuron2.vhd".
+WARNING:Xst:737 - Found 32-bit latch for signal <outp>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit register for signal <Acc>.
+    Found 3-bit comparator less for signal <Acc$cmp_lt0000> created at line 79.
+    Found 32-bit 4-to-1 multiplexer for signal <Acc$mux0000>.
+    Found 1-bit register for signal <ActiveEn>.
+    Found 3-bit up counter for signal <Counter>.
+    Found 3-bit register for signal <SelectSig>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  36 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  32 Multiplexer(s).
+Unit <neuron2_2> synthesized.
+
+
+Synthesizing Unit <neuron2_3>.
+    Related source file is "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Neuron2.vhd".
+WARNING:Xst:737 - Found 32-bit latch for signal <outp>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit register for signal <Acc>.
+    Found 3-bit comparator less for signal <Acc$cmp_lt0000> created at line 79.
+    Found 32-bit 4-to-1 multiplexer for signal <Acc$mux0000>.
+    Found 1-bit register for signal <ActiveEn>.
+    Found 3-bit up counter for signal <Counter>.
+    Found 3-bit register for signal <SelectSig>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  36 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  32 Multiplexer(s).
+Unit <neuron2_3> synthesized.
+
+
+Synthesizing Unit <Neuron>.
+    Related source file is "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Neuron.vhd".
+WARNING:Xst:737 - Found 32-bit latch for signal <outp>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit register for signal <Acc>.
+    Found 3-bit comparator less for signal <Acc$cmp_lt0000> created at line 79.
+    Found 32-bit 4-to-1 multiplexer for signal <Acc$mux0000>.
+    Found 1-bit register for signal <ActiveEn>.
+    Found 3-bit up counter for signal <Counter>.
+    Found 2-bit register for signal <SelectSig>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  35 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  32 Multiplexer(s).
+Unit <Neuron> synthesized.
+
+
+Synthesizing Unit <Layer1>.
+    Related source file is "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer1.vhd".
+    Found 128-bit register for signal <biases>.
+    Found 8-bit up counter for signal <Counter_B>.
+    Found 8-bit comparator greatequal for signal <Counter_B$cmp_ge0000> created at line 59.
+    Found 8-bit register for signal <Counter_X>.
+    Found 8-bit adder for signal <Counter_X$addsub0000> created at line 77.
+    Found 8-bit register for signal <Counter_Y>.
+    Found 8-bit adder for signal <Counter_Y$addsub0000> created at line 85.
+    Found 1-bit register for signal <rst_weight_en>.
+    Found 32-bit register for signal <weights1<0>>.
+    Found 32-bit register for signal <weights2<0>>.
+    Found 32-bit register for signal <weights3<0>>.
+    Found 32-bit register for signal <weights4<0>>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred 273 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <Layer1> synthesized.
+
+
+Synthesizing Unit <Layer2>.
+    Related source file is "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer2.vhd".
+WARNING:Xst:1781 - Signal <weights5> is used but never assigned. Tied to default value.
+    Found 160-bit register for signal <biases>.
+    Found 8-bit up counter for signal <Counter_B>.
+    Found 8-bit comparator greatequal for signal <Counter_B$cmp_ge0000> created at line 57.
+    Found 8-bit register for signal <Counter_X>.
+    Found 8-bit adder for signal <Counter_X$addsub0000> created at line 77.
+    Found 8-bit register for signal <Counter_Y>.
+    Found 8-bit adder for signal <Counter_Y$addsub0000> created at line 85.
+    Found 1-bit register for signal <rst_weight_en>.
+    Found 128-bit register for signal <weights1>.
+    Found 128-bit register for signal <weights2>.
+    Found 128-bit register for signal <weights3>.
+    Found 128-bit register for signal <weights4>.
+    Found 32-bit 4-to-1 multiplexer for signal <weights4_0$mux0000>.
+    Found 32-bit 4-to-1 multiplexer for signal <weights4_1$mux0000>.
+    Found 32-bit 4-to-1 multiplexer for signal <weights4_2$mux0000>.
+    Found 32-bit 4-to-1 multiplexer for signal <weights4_3$mux0000>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred 689 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred 128 Multiplexer(s).
+Unit <Layer2> synthesized.
+
+
+Synthesizing Unit <Layer3>.
+    Related source file is "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer3.vhd".
+    Found 96-bit register for signal <biases>.
+    Found 8-bit up counter for signal <Counter_B>.
+    Found 8-bit comparator greatequal for signal <Counter_B$cmp_ge0000> created at line 56.
+    Found 8-bit register for signal <Counter_X>.
+    Found 8-bit adder for signal <Counter_X$addsub0000> created at line 69.
+    Found 8-bit register for signal <Counter_Y>.
+    Found 8-bit adder for signal <Counter_Y$addsub0000> created at line 78.
+    Found 1-bit register for signal <rst_weight_en>.
+    Found 160-bit register for signal <weights1>.
+    Found 160-bit register for signal <weights2>.
+    Found 160-bit register for signal <weights3>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred 593 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <Layer3> synthesized.
+
+
+Synthesizing Unit <Layer4>.
+    Related source file is "C:/Users/Asus/Desktop/FPGA nueral/neural-network/Layer4.vhd".
+    Found 32-bit register for signal <biases<0>>.
+    Found 8-bit up counter for signal <Counter_B>.
+    Found 8-bit comparator greatequal for signal <Counter_B$cmp_ge0000> created at line 52.
+    Found 8-bit register for signal <Counter_X>.
+    Found 8-bit adder for signal <Counter_X$addsub0000> created at line 61.
+    Found 8-bit register for signal <Counter_Y>.
+    Found 8-bit adder for signal <Counter_Y$addsub0000> created at line 70.
+    Found 1-bit register for signal <rst_weight_en>.
+    Found 96-bit register for signal <weights1>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred 145 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <Layer4> synthesized.
+
+
+Synthesizing Unit <TopLevel>.
+    Related source file is "C:/Users/Asus/Desktop/FPGA nueral/neural-network/TopLevel.vhd".
+WARNING:Xst:1306 - Output <done> is never assigned.
+WARNING:Xst:1780 - Signal <RSTW> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <TopLevel> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 13
+ 32x32-bit multiplier                                  : 13
+# Adders/Subtractors                                   : 21
+ 32-bit adder                                          : 13
+ 8-bit adder                                           : 8
+# Counters                                             : 18
+ 2-bit up counter                                      : 4
+ 3-bit up counter                                      : 9
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 4
+# Registers                                            : 110
+ 1-bit register                                        : 28
+ 2-bit register                                        : 1
+ 3-bit register                                        : 8
+ 32-bit register                                       : 64
+ 4-bit register                                        : 1
+ 8-bit register                                        : 8
+# Latches                                              : 13
+ 32-bit latch                                          : 13
+# Comparators                                          : 39
+ 2-bit comparator less                                 : 5
+ 3-bit comparator less                                 : 17
+ 32-bit comparator less                                : 12
+ 4-bit comparator greatequal                           : 1
+ 8-bit comparator greatequal                           : 4
+# Multiplexers                                         : 29
+ 32-bit 4-to-1 multiplexer                             : 29
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <Counter2_2> in Unit <Cntr> is equivalent to the following FF/Latch, which will be removed : <Counter2_3> 
+WARNING:Xst:1426 - The value init of the FF/Latch WRST2 hinder the constant cleaning in the block Cntr.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch WRST1 hinder the constant cleaning in the block Cntr.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch done hinder the constant cleaning in the block Cntr.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1293 - FF/Latch <WRST2> has a constant value of 0 in block <Cntr>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Counter2_2> has a constant value of 0 in block <Cntr>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Counter2_0> of sequential type is unconnected in block <Cntr>.
+WARNING:Xst:2677 - Node <Counter2_1> of sequential type is unconnected in block <Cntr>.
+WARNING:Xst:2677 - Node <Counter2_0> of sequential type is unconnected in block <Controller>.
+WARNING:Xst:2677 - Node <Counter2_1> of sequential type is unconnected in block <Controller>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 13
+ 32x32-bit multiplier                                  : 13
+# Adders/Subtractors                                   : 21
+ 32-bit adder                                          : 13
+ 8-bit adder                                           : 8
+# Counters                                             : 18
+ 2-bit up counter                                      : 4
+ 3-bit up counter                                      : 9
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 4
+# Registers                                            : 2168
+ Flip-Flops                                            : 2168
+# Latches                                              : 13
+ 32-bit latch                                          : 13
+# Comparators                                          : 39
+ 2-bit comparator less                                 : 5
+ 3-bit comparator less                                 : 17
+ 32-bit comparator less                                : 12
+ 4-bit comparator greatequal                           : 1
+ 8-bit comparator greatequal                           : 4
+# Multiplexers                                         : 29
+ 32-bit 4-to-1 multiplexer                             : 29
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch WRST1 hinder the constant cleaning in the block Controller.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch WRST2 hinder the constant cleaning in the block Controller.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch done hinder the constant cleaning in the block Controller.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1293 - FF/Latch <WRST2> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Counter2_2> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Counter2_3> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <outp_31> (without init value) has a constant value of 0 in block <Neuron2_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <outp_31> (without init value) has a constant value of 0 in block <neuron2_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <outp_31> (without init value) has a constant value of 0 in block <neuron2_3>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <TopLevel> ...
+
+Optimizing unit <Controller> ...
+
+Optimizing unit <Neuron2_1> ...
+
+Optimizing unit <neuron2_2> ...
+
+Optimizing unit <neuron2_3> ...
+
+Optimizing unit <Neuron> ...
+
+Optimizing unit <Layer1> ...
+
+Optimizing unit <Layer2> ...
+
+Optimizing unit <Layer3> ...
+
+Optimizing unit <Layer4> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TopLevel, actual ratio is 193.
+Optimizing block <TopLevel> to meet ratio 100 (+ 5) of 3584 slices :
+WARNING:Xst:2254 - Area constraint could not be met for block <TopLevel>, final ratio is 191.
+FlipFlop Lr2/Nr1/SelectSig_0 has been replicated 6 time(s)
+FlipFlop Lr2/Nr1/SelectSig_1 has been replicated 2 time(s)
+FlipFlop Lr2/Nr1/SelectSig_2 has been replicated 6 time(s)
+FlipFlop Lr2/Nr2/SelectSig_0 has been replicated 6 time(s)
+FlipFlop Lr2/Nr2/SelectSig_1 has been replicated 2 time(s)
+FlipFlop Lr2/Nr2/SelectSig_2 has been replicated 6 time(s)
+FlipFlop Lr2/Nr3/SelectSig_0 has been replicated 6 time(s)
+FlipFlop Lr2/Nr3/SelectSig_1 has been replicated 2 time(s)
+FlipFlop Lr2/Nr3/SelectSig_2 has been replicated 6 time(s)
+FlipFlop Lr2/Nr4/SelectSig_0 has been replicated 6 time(s)
+FlipFlop Lr2/Nr4/SelectSig_1 has been replicated 2 time(s)
+FlipFlop Lr2/Nr4/SelectSig_2 has been replicated 6 time(s)
+FlipFlop Lr2/Nr5/SelectSig_0 has been replicated 6 time(s)
+FlipFlop Lr2/Nr5/SelectSig_1 has been replicated 3 time(s)
+FlipFlop Lr2/Nr5/SelectSig_2 has been replicated 6 time(s)
+FlipFlop Lr3/Nr1/SelectSig_0 has been replicated 11 time(s)
+FlipFlop Lr3/Nr1/SelectSig_1 has been replicated 11 time(s)
+FlipFlop Lr3/Nr1/SelectSig_2 has been replicated 4 time(s)
+FlipFlop Lr3/Nr2/SelectSig_0 has been replicated 11 time(s)
+FlipFlop Lr3/Nr2/SelectSig_1 has been replicated 11 time(s)
+FlipFlop Lr3/Nr2/SelectSig_2 has been replicated 4 time(s)
+FlipFlop Lr3/Nr3/SelectSig_0 has been replicated 11 time(s)
+FlipFlop Lr3/Nr3/SelectSig_1 has been replicated 11 time(s)
+FlipFlop Lr3/Nr3/SelectSig_2 has been replicated 4 time(s)
+FlipFlop Lr4/Nr1/SelectSig_0 has been replicated 3 time(s)
+FlipFlop Lr4/Nr1/SelectSig_1 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 2390
+ Flip-Flops                                            : 2390
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : TopLevel.ngr
+Top Level Output File Name         : TopLevel
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 100
+
+Cell Usage :
+# BELS                             : 34542
+#      GND                         : 1
+#      INV                         : 277
+#      LUT1                        : 176
+#      LUT2                        : 5021
+#      LUT3                        : 1730
+#      LUT3_D                      : 18
+#      LUT3_L                      : 44
+#      LUT4                        : 4817
+#      LUT4_D                      : 36
+#      LUT4_L                      : 168
+#      MULT_AND                    : 3508
+#      MUXCY                       : 9214
+#      MUXF5                       : 293
+#      VCC                         : 1
+#      XORCY                       : 9238
+# FlipFlops/Latches                : 2794
+#      FDE                         : 2122
+#      FDRE                        : 158
+#      FDRSE                       : 13
+#      FDSE                        : 97
+#      LD                          : 404
+# Clock Buffers                    : 8
+#      BUFG                        : 8
+# IO Buffers                       : 99
+#      IBUF                        : 67
+#      OBUF                        : 32
+# MULTs                            : 16
+#      MULT18X18                   : 16
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400pq208-5 
+
+ Number of Slices:                     6974  out of   3584   194% (*) 
+ Number of Slice Flip Flops:           2762  out of   7168    38%  
+ Number of 4 input LUTs:              12287  out of   7168   171% (*) 
+ Number of IOs:                         100
+ Number of bonded IOBs:                  99  out of    141    70%  
+    IOB Flip Flops:                      32
+ Number of MULT18X18s:                   16  out of     16   100%  
+ Number of GCLKs:                         8  out of      8   100%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)    | Load  |
+-----------------------------------+--------------------------+-------+
+clk                                | IBUF+BUFG                | 1785  |
+Lr1/clk21(Lr1/clk21:O)             | BUFG(*)(Lr1/Nr1/ActiveEn)| 144   |
+Lr1/Nr1/ActiveEn1                  | BUFG                     | 31    |
+Lr1/Nr2/ActiveEn1                  | BUFG                     | 31    |
+Lr1/Nr3/ActiveEn1                  | BUFG                     | 31    |
+Lr1/Nr4/ActiveEn                   | NONE(Lr1/Nr4/outp_0)     | 31    |
+Lr2/clk21(Lr2/clk21:O)             | BUFG(*)(Lr2/Nr1/ActiveEn)| 266   |
+Lr2/Nr1/ActiveEn                   | NONE(Lr2/Nr1/outp_0)     | 31    |
+Lr2/Nr2/ActiveEn                   | NONE(Lr2/Nr2/outp_0)     | 31    |
+Lr2/Nr3/ActiveEn                   | NONE(Lr2/Nr3/outp_0)     | 31    |
+Lr2/Nr4/ActiveEn                   | NONE(Lr2/Nr4/outp_0)     | 31    |
+Lr2/Nr5/ActiveEn                   | NONE(Lr2/Nr5/outp_0)     | 31    |
+Lr3/clk21(Lr3/clk21:O)             | BUFG(*)(Lr3/Nr1/ActiveEn)| 195   |
+Lr3/Nr1/ActiveEn                   | NONE(Lr3/Nr1/outp_0)     | 31    |
+Lr3/Nr2/ActiveEn                   | NONE(Lr3/Nr2/outp_0)     | 31    |
+Lr3/Nr3/ActiveEn                   | NONE(Lr3/Nr3/outp_0)     | 31    |
+Lr4/Nr1/ActiveEn1                  | BUFG                     | 32    |
+-----------------------------------+--------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 26.722ns (Maximum Frequency: 37.422MHz)
+   Minimum input arrival time before clock: 21.354ns
+   Maximum output required time after clock: 6.141ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 25.262ns (frequency: 39.586MHz)
+  Total number of paths / destination ports: 546327519405 / 2102
+-------------------------------------------------------------------------
+Delay:               25.262ns (Levels of Logic = 59)
+  Source:            Lr4/Nr1/SelectSig_0_1 (FF)
+  Destination:       Lr4/Nr1/Acc_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Lr4/Nr1/SelectSig_0_1 to Lr4/Nr1/Acc_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDSE:C->Q            18   0.626   1.263  Lr4/Nr1/SelectSig_0_1 (Lr4/Nr1/SelectSig_0_1)
+     LUT3_L:I2->LO         1   0.479   0.123  Lr4/Nr1/Cs/OutI<4>_SW0 (N753)
+     LUT4:I3->O           32   0.479   1.870  Lr4/Nr1/Cs/OutI<4> (Lr4/Nr1/Cm/Mmult_temp_I1<4>_x_W1<0>_mand)
+     LUT4:I0->O            1   0.479   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_lut<4> (Lr4/Nr1/Cm/Mmult_temp_Madd14_lut<4>)
+     MUXCY:S->O            1   0.435   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<4> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<5> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<6> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<7> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<8> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<8>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<9> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<9>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<10> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<10>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<11> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<11>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<12> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<12>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<13> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<13>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<14> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<14>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<15> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<15>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<16> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<16>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<17> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<17>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<18> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<18>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<19> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<19>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<20> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<20>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<21> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<21>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<22> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<22>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<23> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<23>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<24> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<24>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<25> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<25>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<26> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<26>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<27> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<27>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<28> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<28>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<29> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<29>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<30> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<30>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<31> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<31>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<32> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<32>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<33> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<33>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<34> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<34>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<35> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<35>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<36> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<36>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<37> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<37>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<38> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<38>)
+     MUXCY:CI->O           1   0.056   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<39> (Lr4/Nr1/Cm/Mmult_temp_Madd14_cy<39>)
+     XORCY:CI->O           1   0.786   0.976  Lr4/Nr1/Cm/Mmult_temp_Madd14_xor<40> (Lr4/Nr1/Cm/Mmult_temp_Madd_4117)
+     LUT2:I0->O            1   0.479   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd22_lut<41> (Lr4/Nr1/Cm/Mmult_temp_Madd22_lut<41>)
+     MUXCY:S->O            1   0.435   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd22_cy<41> (Lr4/Nr1/Cm/Mmult_temp_Madd22_cy<41>)
+     XORCY:CI->O           1   0.786   0.851  Lr4/Nr1/Cm/Mmult_temp_Madd22_xor<42> (Lr4/Nr1/Cm/Mmult_temp_Madd_4220)
+     LUT2:I1->O            1   0.479   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd27_lut<42> (Lr4/Nr1/Cm/Mmult_temp_Madd27_lut<42>)
+     MUXCY:S->O            1   0.435   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd27_cy<42> (Lr4/Nr1/Cm/Mmult_temp_Madd27_cy<42>)
+     XORCY:CI->O           1   0.786   0.851  Lr4/Nr1/Cm/Mmult_temp_Madd27_xor<43> (Lr4/Nr1/Cm/Mmult_temp_Madd_4322)
+     LUT2:I1->O            1   0.479   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd29_lut<43> (Lr4/Nr1/Cm/Mmult_temp_Madd29_lut<43>)
+     MUXCY:S->O            1   0.435   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd29_cy<43> (Lr4/Nr1/Cm/Mmult_temp_Madd29_cy<43>)
+     XORCY:CI->O           1   0.786   0.851  Lr4/Nr1/Cm/Mmult_temp_Madd29_xor<44> (Lr4/Nr1/Cm/Mmult_temp_Madd_4421)
+     LUT2:I1->O            1   0.479   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd30_lut<44> (Lr4/Nr1/Cm/Mmult_temp_Madd30_lut<44>)
+     MUXCY:S->O            1   0.435   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd30_cy<44> (Lr4/Nr1/Cm/Mmult_temp_Madd30_cy<44>)
+     XORCY:CI->O           1   0.786   0.740  Lr4/Nr1/Cm/Mmult_temp_Madd30_xor<45> (Lr4/Nr1/Cm/Mmult_temp_Madd_4522)
+     LUT3:I2->O            1   0.479   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd31_lut<45> (Lr4/Nr1/Cm/Mmult_temp_Madd31_lut<45>)
+     MUXCY:S->O            1   0.435   0.000  Lr4/Nr1/Cm/Mmult_temp_Madd31_cy<45> (Lr4/Nr1/Cm/Mmult_temp_Madd31_cy<45>)
+     XORCY:CI->O           1   0.786   0.851  Lr4/Nr1/Cm/Mmult_temp_Madd31_xor<46> (Lr4/Nr1/MultOut<30>)
+     LUT2:I1->O            1   0.479   0.000  Lr4/Nr1/Ca/Madd_outp_lut<30> (Lr4/Nr1/Ca/Madd_outp_lut<30>)
+     MUXCY:S->O            0   0.435   0.000  Lr4/Nr1/Ca/Madd_outp_cy<30> (Lr4/Nr1/Ca/Madd_outp_cy<30>)
+     XORCY:CI->O           2   0.786   0.804  Lr4/Nr1/Ca/Madd_outp_xor<31> (Lr4/Nr1/AccTemp<31>)
+     LUT3:I2->O            1   0.479   0.000  Lr4/Nr1/Mmux_Acc_mux0000501 (Lr4/Nr1/Acc_mux0000<31>)
+     FDE:D                     0.176          Lr4/Nr1/Acc_31
+    ----------------------------------------
+    Total                     25.262ns (16.081ns logic, 9.180ns route)
+                                       (63.7% logic, 36.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Lr1/clk21'
+  Clock period: 19.464ns (frequency: 51.377MHz)
+  Total number of paths / destination ports: 17311292 / 292
+-------------------------------------------------------------------------
+Delay:               19.464ns (Levels of Logic = 21)
+  Source:            Lr1/Nr1/SelectSig_0 (FF)
+  Destination:       Lr1/Nr1/Acc_31 (FF)
+  Source Clock:      Lr1/clk21 rising
+  Destination Clock: Lr1/clk21 rising
+
+  Data Path: Lr1/Nr1/SelectSig_0 to Lr1/Nr1/Acc_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDSE:C->Q            64   0.626   2.026  Lr1/Nr1/SelectSig_0 (Lr1/Nr1/SelectSig_0)
+     LUT2:I0->O            2   0.479   0.745  Lr1/Nr1/Cs/OutW<9>1 (Lr1/Nr1/W1<9>)
+     MULT18X18:A9->P35    13   4.467   1.165  Lr1/Nr1/Cm/Mmult_temp_submult_0 (Lr1/Nr1/Cm/Mmult_temp_submult_0_35)
+     LUT2:I1->O            1   0.479   0.000  Lr1/Nr1/Cm/Mmult_temp0_Madd_lut<35> (Lr1/Nr1/Cm/Mmult_temp0_Madd_lut<35>)
+     MUXCY:S->O            1   0.435   0.000  Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<35> (Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<35>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<36> (Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<36>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<37> (Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<37>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<38> (Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<38>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<39> (Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<39>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<40> (Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<40>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<41> (Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<41>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<42> (Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<42>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<43> (Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<43>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<44> (Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<44>)
+     XORCY:CI->O           1   0.786   0.976  Lr1/Nr1/Cm/Mmult_temp0_Madd_xor<45> (Lr1/Nr1/Cm/Mmult_temp0_Madd_45)
+     LUT2:I0->O            1   0.479   0.000  Lr1/Nr1/Cm/Mmult_temp2_Madd_lut<45> (Lr1/Nr1/Cm/Mmult_temp2_Madd_lut<45>)
+     MUXCY:S->O            1   0.435   0.000  Lr1/Nr1/Cm/Mmult_temp2_Madd_cy<45> (Lr1/Nr1/Cm/Mmult_temp2_Madd_cy<45>)
+     XORCY:CI->O           1   0.786   0.976  Lr1/Nr1/Cm/Mmult_temp2_Madd_xor<46> (Lr1/Nr1/MultOut<30>)
+     LUT2:I0->O            1   0.479   0.000  Lr1/Nr1/Ca/Madd_outp_lut<30> (Lr1/Nr1/Ca/Madd_outp_lut<30>)
+     MUXCY:S->O            0   0.435   0.000  Lr1/Nr1/Ca/Madd_outp_cy<30> (Lr1/Nr1/Ca/Madd_outp_cy<30>)
+     XORCY:CI->O          33   0.786   1.750  Lr1/Nr1/Ca/Madd_outp_xor<31> (Lr1/Nr1/AccTemp<31>)
+     LUT3:I1->O            1   0.479   0.000  Lr1/Nr1/Mmux_Acc_mux0000501 (Lr1/Nr1/Acc_mux0000<31>)
+     FDE:D                     0.176          Lr1/Nr1/Acc_31
+    ----------------------------------------
+    Total                     19.464ns (11.827ns logic, 7.638ns route)
+                                       (60.8% logic, 39.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Lr2/clk21'
+  Clock period: 25.822ns (frequency: 38.727MHz)
+  Total number of paths / destination ports: 2817965857543 / 542
+-------------------------------------------------------------------------
+Delay:               25.822ns (Levels of Logic = 59)
+  Source:            Lr2/Nr5/SelectSig_2_6 (FF)
+  Destination:       Lr2/Nr5/Acc_31 (FF)
+  Source Clock:      Lr2/clk21 rising
+  Destination Clock: Lr2/clk21 rising
+
+  Data Path: Lr2/Nr5/SelectSig_2_6 to Lr2/Nr5/Acc_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDSE:C->Q            17   0.626   1.166  Lr2/Nr5/SelectSig_2_6 (Lr2/Nr5/SelectSig_2_6)
+     LUT4:I3->O            1   0.479   0.000  Lr2/Nr5/Cs/OutI<3>_F (N1037)
+     MUXF5:I0->O          32   0.314   1.870  Lr2/Nr5/Cs/OutI<3> (Lr2/Nr5/Cm/Mmult_temp_I1<3>_x_W1<25>_mand)
+     LUT2:I0->O            1   0.479   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_lut<4> (Lr2/Nr5/Cm/Mmult_temp_Madd14_lut<4>)
+     MUXCY:S->O            1   0.435   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<4> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<5> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<6> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<7> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<8> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<8>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<9> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<9>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<10> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<10>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<11> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<11>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<12> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<12>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<13> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<13>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<14> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<14>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<15> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<15>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<16> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<16>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<17> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<17>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<18> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<18>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<19> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<19>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<20> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<20>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<21> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<21>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<22> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<22>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<23> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<23>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<24> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<24>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<25> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<25>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<26> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<26>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<27> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<27>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<28> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<28>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<29> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<29>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<30> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<30>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<31> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<31>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<32> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<32>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<33> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<33>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<34> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<34>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<35> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<35>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<36> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<36>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<37> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<37>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<38> (Lr2/Nr5/Cm/Mmult_temp_Madd14_cy<38>)
+     XORCY:CI->O           1   0.786   0.976  Lr2/Nr5/Cm/Mmult_temp_Madd14_xor<39> (Lr2/Nr5/Cm/Mmult_temp_Madd_4011)
+     LUT2:I0->O            1   0.479   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd22_lut<40> (Lr2/Nr5/Cm/Mmult_temp_Madd22_lut<40>)
+     MUXCY:S->O            1   0.435   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd22_cy<40> (Lr2/Nr5/Cm/Mmult_temp_Madd22_cy<40>)
+     XORCY:CI->O           1   0.786   0.851  Lr2/Nr5/Cm/Mmult_temp_Madd22_xor<41> (Lr2/Nr5/Cm/Mmult_temp_Madd_4124)
+     LUT2:I1->O            1   0.479   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd27_lut<41> (Lr2/Nr5/Cm/Mmult_temp_Madd27_lut<41>)
+     MUXCY:S->O            1   0.435   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd27_cy<41> (Lr2/Nr5/Cm/Mmult_temp_Madd27_cy<41>)
+     XORCY:CI->O           1   0.786   0.851  Lr2/Nr5/Cm/Mmult_temp_Madd27_xor<42> (Lr2/Nr5/Cm/Mmult_temp_Madd_4225)
+     LUT2:I1->O            1   0.479   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd29_lut<42> (Lr2/Nr5/Cm/Mmult_temp_Madd29_lut<42>)
+     MUXCY:S->O            1   0.435   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd29_cy<42> (Lr2/Nr5/Cm/Mmult_temp_Madd29_cy<42>)
+     XORCY:CI->O           1   0.786   0.851  Lr2/Nr5/Cm/Mmult_temp_Madd29_xor<43> (Lr2/Nr5/Cm/Mmult_temp_Madd_4324)
+     LUT2:I1->O            1   0.479   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd30_lut<43> (Lr2/Nr5/Cm/Mmult_temp_Madd30_lut<43>)
+     MUXCY:S->O            1   0.435   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd30_cy<43> (Lr2/Nr5/Cm/Mmult_temp_Madd30_cy<43>)
+     XORCY:CI->O           1   0.786   0.851  Lr2/Nr5/Cm/Mmult_temp_Madd30_xor<44> (Lr2/Nr5/Cm/Mmult_temp_Madd_4422)
+     LUT2:I1->O            1   0.479   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd31_lut<44> (Lr2/Nr5/Cm/Mmult_temp_Madd31_lut<44>)
+     MUXCY:S->O            1   0.435   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd31_cy<44> (Lr2/Nr5/Cm/Mmult_temp_Madd31_cy<44>)
+     MUXCY:CI->O           1   0.056   0.000  Lr2/Nr5/Cm/Mmult_temp_Madd31_cy<45> (Lr2/Nr5/Cm/Mmult_temp_Madd31_cy<45>)
+     XORCY:CI->O           1   0.786   0.851  Lr2/Nr5/Cm/Mmult_temp_Madd31_xor<46> (Lr2/Nr5/MultOut<30>)
+     LUT2:I1->O            1   0.479   0.000  Lr2/Nr5/Ca/Madd_outp_lut<30> (Lr2/Nr5/Ca/Madd_outp_lut<30>)
+     MUXCY:S->O            0   0.435   0.000  Lr2/Nr5/Ca/Madd_outp_cy<30> (Lr2/Nr5/Ca/Madd_outp_cy<30>)
+     XORCY:CI->O          33   0.786   1.639  Lr2/Nr5/Ca/Madd_outp_xor<31> (Lr2/Nr5/AccTemp<31>)
+     LUT3:I2->O            1   0.479   0.000  Lr2/Nr5/Mmux_Acc_mux0000501 (Lr2/Nr5/Acc_mux0000<31>)
+     FDE:D                     0.176          Lr2/Nr5/Acc_31
+    ----------------------------------------
+    Total                     25.822ns (15.917ns logic, 9.905ns route)
+                                       (61.6% logic, 38.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Lr3/clk21'
+  Clock period: 26.722ns (frequency: 37.422MHz)
+  Total number of paths / destination ports: 2913737151153 / 396
+-------------------------------------------------------------------------
+Delay:               26.722ns (Levels of Logic = 59)
+  Source:            Lr3/Nr1/SelectSig_2_1 (FF)
+  Destination:       Lr3/Nr1/Acc_31 (FF)
+  Source Clock:      Lr3/clk21 rising
+  Destination Clock: Lr3/clk21 rising
+
+  Data Path: Lr3/Nr1/SelectSig_2_1 to Lr3/Nr1/Acc_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDSE:C->Q            17   0.626   1.313  Lr3/Nr1/SelectSig_2_1 (Lr3/Nr1/SelectSig_2_1)
+     LUT4:I1->O            1   0.479   0.704  Lr3/Nr1/Cs/OutW<1>65 (Lr3/Nr1/Cs/OutW<1>65)
+     LUT4:I3->O           31   0.479   1.865  Lr3/Nr1/Cs/OutW<1>69 (Lr3/Nr1/W1<1>)
+     LUT4:I0->O            1   0.479   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_lut<4> (Lr3/Nr1/Cm/Mmult_temp_Madd14_lut<4>)
+     MUXCY:S->O            1   0.435   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<4> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<5> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<6> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<7> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<8> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<8>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<9> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<9>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<10> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<10>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<11> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<11>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<12> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<12>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<13> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<13>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<14> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<14>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<15> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<15>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<16> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<16>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<17> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<17>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<18> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<18>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<19> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<19>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<20> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<20>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<21> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<21>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<22> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<22>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<23> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<23>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<24> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<24>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<25> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<25>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<26> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<26>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<27> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<27>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<28> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<28>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<29> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<29>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<30> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<30>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<31> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<31>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<32> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<32>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<33> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<33>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<34> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<34>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<35> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<35>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<36> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<36>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<37> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<37>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<38> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<38>)
+     MUXCY:CI->O           1   0.056   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<39> (Lr3/Nr1/Cm/Mmult_temp_Madd14_cy<39>)
+     XORCY:CI->O           1   0.786   0.976  Lr3/Nr1/Cm/Mmult_temp_Madd14_xor<40> (Lr3/Nr1/Cm/Mmult_temp_Madd_4117)
+     LUT2:I0->O            1   0.479   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd22_lut<41> (Lr3/Nr1/Cm/Mmult_temp_Madd22_lut<41>)
+     MUXCY:S->O            1   0.435   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd22_cy<41> (Lr3/Nr1/Cm/Mmult_temp_Madd22_cy<41>)
+     XORCY:CI->O           1   0.786   0.851  Lr3/Nr1/Cm/Mmult_temp_Madd22_xor<42> (Lr3/Nr1/Cm/Mmult_temp_Madd_4220)
+     LUT2:I1->O            1   0.479   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd27_lut<42> (Lr3/Nr1/Cm/Mmult_temp_Madd27_lut<42>)
+     MUXCY:S->O            1   0.435   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd27_cy<42> (Lr3/Nr1/Cm/Mmult_temp_Madd27_cy<42>)
+     XORCY:CI->O           1   0.786   0.851  Lr3/Nr1/Cm/Mmult_temp_Madd27_xor<43> (Lr3/Nr1/Cm/Mmult_temp_Madd_4322)
+     LUT2:I1->O            1   0.479   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd29_lut<43> (Lr3/Nr1/Cm/Mmult_temp_Madd29_lut<43>)
+     MUXCY:S->O            1   0.435   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd29_cy<43> (Lr3/Nr1/Cm/Mmult_temp_Madd29_cy<43>)
+     XORCY:CI->O           1   0.786   0.851  Lr3/Nr1/Cm/Mmult_temp_Madd29_xor<44> (Lr3/Nr1/Cm/Mmult_temp_Madd_4421)
+     LUT2:I1->O            1   0.479   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd30_lut<44> (Lr3/Nr1/Cm/Mmult_temp_Madd30_lut<44>)
+     MUXCY:S->O            1   0.435   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd30_cy<44> (Lr3/Nr1/Cm/Mmult_temp_Madd30_cy<44>)
+     XORCY:CI->O           1   0.786   0.740  Lr3/Nr1/Cm/Mmult_temp_Madd30_xor<45> (Lr3/Nr1/Cm/Mmult_temp_Madd_4522)
+     LUT3:I2->O            1   0.479   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd31_lut<45> (Lr3/Nr1/Cm/Mmult_temp_Madd31_lut<45>)
+     MUXCY:S->O            1   0.435   0.000  Lr3/Nr1/Cm/Mmult_temp_Madd31_cy<45> (Lr3/Nr1/Cm/Mmult_temp_Madd31_cy<45>)
+     XORCY:CI->O           1   0.786   0.851  Lr3/Nr1/Cm/Mmult_temp_Madd31_xor<46> (Lr3/Nr1/MultOut<30>)
+     LUT2:I1->O            1   0.479   0.000  Lr3/Nr1/Ca/Madd_outp_lut<30> (Lr3/Nr1/Ca/Madd_outp_lut<30>)
+     MUXCY:S->O            0   0.435   0.000  Lr3/Nr1/Ca/Madd_outp_cy<30> (Lr3/Nr1/Ca/Madd_outp_cy<30>)
+     XORCY:CI->O          33   0.786   1.639  Lr3/Nr1/Ca/Madd_outp_xor<31> (Lr3/Nr1/AccTemp<31>)
+     LUT3:I2->O            1   0.479   0.000  Lr3/Nr1/Mmux_Acc_mux0000501 (Lr3/Nr1/Acc_mux0000<31>)
+     FDE:D                     0.176          Lr3/Nr1/Acc_31
+    ----------------------------------------
+    Total                     26.722ns (16.082ns logic, 10.640ns route)
+                                       (60.2% logic, 39.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1731 / 1720
+-------------------------------------------------------------------------
+Offset:              6.598ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       Lr4/Nr1/Counter_1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to Lr4/Nr1/Counter_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           249   0.715   2.927  rst_IBUF (rst_IBUF)
+     LUT4:I0->O           34   0.479   1.585  Lr4/Nr1/Mcount_Counter_val1 (Lr4/Nr1/Mcount_Counter_val)
+     FDRE:R                    0.892          Lr4/Nr1/Counter_1
+    ----------------------------------------
+    Total                      6.598ns (2.086ns logic, 4.512ns route)
+                                       (31.6% logic, 68.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Lr1/clk21'
+  Total number of paths / destination ports: 8648212 / 276
+-------------------------------------------------------------------------
+Offset:              18.477ns (Levels of Logic = 22)
+  Source:            inp<16> (PAD)
+  Destination:       Lr1/Nr1/Acc_31 (FF)
+  Destination Clock: Lr1/clk21 rising
+
+  Data Path: inp<16> to Lr1/Nr1/Acc_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.715   0.949  inp_16_IBUF (inp_16_IBUF)
+     LUT2:I1->O            2   0.479   0.745  Lr1/Nr4/Cs/OutI<16>1 (Lr1/Nr4/I1<16>)
+     MULT18X18:B16->P35   13   4.467   1.165  Lr1/Nr4/Cm/Mmult_temp_submult_0 (Lr1/Nr4/Cm/Mmult_temp_submult_0_35)
+     LUT2:I1->O            1   0.479   0.000  Lr1/Nr4/Cm/Mmult_temp0_Madd_lut<35> (Lr1/Nr4/Cm/Mmult_temp0_Madd_lut<35>)
+     MUXCY:S->O            1   0.435   0.000  Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<35> (Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<35>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<36> (Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<36>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<37> (Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<37>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<38> (Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<38>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<39> (Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<39>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<40> (Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<40>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<41> (Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<41>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<42> (Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<42>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<43> (Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<43>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<44> (Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<44>)
+     XORCY:CI->O           1   0.786   0.976  Lr1/Nr4/Cm/Mmult_temp0_Madd_xor<45> (Lr1/Nr4/Cm/Mmult_temp0_Madd_45)
+     LUT2:I0->O            1   0.479   0.000  Lr1/Nr4/Cm/Mmult_temp2_Madd_lut<45> (Lr1/Nr4/Cm/Mmult_temp2_Madd_lut<45>)
+     MUXCY:S->O            1   0.435   0.000  Lr1/Nr4/Cm/Mmult_temp2_Madd_cy<45> (Lr1/Nr4/Cm/Mmult_temp2_Madd_cy<45>)
+     XORCY:CI->O           1   0.786   0.976  Lr1/Nr4/Cm/Mmult_temp2_Madd_xor<46> (Lr1/Nr4/MultOut<30>)
+     LUT2:I0->O            1   0.479   0.000  Lr1/Nr4/Ca/Madd_outp_lut<30> (Lr1/Nr4/Ca/Madd_outp_lut<30>)
+     MUXCY:S->O            0   0.435   0.000  Lr1/Nr4/Ca/Madd_outp_cy<30> (Lr1/Nr4/Ca/Madd_outp_cy<30>)
+     XORCY:CI->O          33   0.786   1.750  Lr1/Nr4/Ca/Madd_outp_xor<31> (Lr1/Nr4/AccTemp<31>)
+     LUT3:I1->O            1   0.479   0.000  Lr1/Nr4/Mmux_Acc_mux0000501 (Lr1/Nr4/Acc_mux0000<31>)
+     FDE:D                     0.176          Lr1/Nr4/Acc_31
+    ----------------------------------------
+    Total                     18.477ns (11.916ns logic, 6.561ns route)
+                                       (64.5% logic, 35.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Lr1/Nr1/ActiveEn1'
+  Total number of paths / destination ports: 75583638 / 31
+-------------------------------------------------------------------------
+Offset:              21.354ns (Levels of Logic = 24)
+  Source:            inp<16> (PAD)
+  Destination:       Lr1/Nr1/outp_16 (LATCH)
+  Destination Clock: Lr1/Nr1/ActiveEn1 falling
+
+  Data Path: inp<16> to Lr1/Nr1/outp_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.715   0.949  inp_16_IBUF (inp_16_IBUF)
+     LUT2:I1->O            2   0.479   0.745  Lr1/Nr1/Cs/OutI<16>1 (Lr1/Nr1/I1<16>)
+     MULT18X18:B16->P35   13   4.467   1.165  Lr1/Nr1/Cm/Mmult_temp_submult_0 (Lr1/Nr1/Cm/Mmult_temp_submult_0_35)
+     LUT2:I1->O            1   0.479   0.000  Lr1/Nr1/Cm/Mmult_temp0_Madd_lut<35> (Lr1/Nr1/Cm/Mmult_temp0_Madd_lut<35>)
+     MUXCY:S->O            1   0.435   0.000  Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<35> (Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<35>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<36> (Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<36>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<37> (Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<37>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<38> (Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<38>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<39> (Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<39>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<40> (Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<40>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<41> (Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<41>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<42> (Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<42>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<43> (Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<43>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<44> (Lr1/Nr1/Cm/Mmult_temp0_Madd_cy<44>)
+     XORCY:CI->O           1   0.786   0.976  Lr1/Nr1/Cm/Mmult_temp0_Madd_xor<45> (Lr1/Nr1/Cm/Mmult_temp0_Madd_45)
+     LUT2:I0->O            1   0.479   0.000  Lr1/Nr1/Cm/Mmult_temp2_Madd_lut<45> (Lr1/Nr1/Cm/Mmult_temp2_Madd_lut<45>)
+     MUXCY:S->O            1   0.435   0.000  Lr1/Nr1/Cm/Mmult_temp2_Madd_cy<45> (Lr1/Nr1/Cm/Mmult_temp2_Madd_cy<45>)
+     XORCY:CI->O           1   0.786   0.976  Lr1/Nr1/Cm/Mmult_temp2_Madd_xor<46> (Lr1/Nr1/MultOut<30>)
+     LUT2:I0->O            1   0.479   0.000  Lr1/Nr1/Ca/Madd_outp_lut<30> (Lr1/Nr1/Ca/Madd_outp_lut<30>)
+     MUXCY:S->O            0   0.435   0.000  Lr1/Nr1/Ca/Madd_outp_cy<30> (Lr1/Nr1/Ca/Madd_outp_cy<30>)
+     XORCY:CI->O          33   0.786   1.639  Lr1/Nr1/Ca/Madd_outp_xor<31> (Lr1/Nr1/AccTemp<31>)
+     LUT3:I2->O            1   0.479   0.000  Lr1/Nr1/Caf/Mcompar_outp_cmp_lt0000_lut<4> (Lr1/Nr1/Caf/Mcompar_outp_cmp_lt0000_lut<4>)
+     MUXCY:S->O           31   0.644   1.865  Lr1/Nr1/Caf/Mcompar_outp_cmp_lt0000_cy<4> (Lr1/Nr1/Caf/Mcompar_outp_cmp_lt0000_cy<4>)
+     LUT3:I0->O            1   0.479   0.000  Lr1/Nr1/Caf/Mmux_outp81 (Lr1/Nr1/OutTemp<16>)
+     LD:D                      0.176          Lr1/Nr1/outp_16
+    ----------------------------------------
+    Total                     21.354ns (13.039ns logic, 8.315ns route)
+                                       (61.1% logic, 38.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Lr1/Nr2/ActiveEn1'
+  Total number of paths / destination ports: 75583638 / 31
+-------------------------------------------------------------------------
+Offset:              21.354ns (Levels of Logic = 24)
+  Source:            inp<16> (PAD)
+  Destination:       Lr1/Nr2/outp_16 (LATCH)
+  Destination Clock: Lr1/Nr2/ActiveEn1 falling
+
+  Data Path: inp<16> to Lr1/Nr2/outp_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.715   0.949  inp_16_IBUF (inp_16_IBUF)
+     LUT2:I1->O            2   0.479   0.745  Lr1/Nr2/Cs/OutI<16>1 (Lr1/Nr2/I1<16>)
+     MULT18X18:B16->P35   13   4.467   1.165  Lr1/Nr2/Cm/Mmult_temp_submult_0 (Lr1/Nr2/Cm/Mmult_temp_submult_0_35)
+     LUT2:I1->O            1   0.479   0.000  Lr1/Nr2/Cm/Mmult_temp0_Madd_lut<35> (Lr1/Nr2/Cm/Mmult_temp0_Madd_lut<35>)
+     MUXCY:S->O            1   0.435   0.000  Lr1/Nr2/Cm/Mmult_temp0_Madd_cy<35> (Lr1/Nr2/Cm/Mmult_temp0_Madd_cy<35>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr2/Cm/Mmult_temp0_Madd_cy<36> (Lr1/Nr2/Cm/Mmult_temp0_Madd_cy<36>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr2/Cm/Mmult_temp0_Madd_cy<37> (Lr1/Nr2/Cm/Mmult_temp0_Madd_cy<37>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr2/Cm/Mmult_temp0_Madd_cy<38> (Lr1/Nr2/Cm/Mmult_temp0_Madd_cy<38>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr2/Cm/Mmult_temp0_Madd_cy<39> (Lr1/Nr2/Cm/Mmult_temp0_Madd_cy<39>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr2/Cm/Mmult_temp0_Madd_cy<40> (Lr1/Nr2/Cm/Mmult_temp0_Madd_cy<40>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr2/Cm/Mmult_temp0_Madd_cy<41> (Lr1/Nr2/Cm/Mmult_temp0_Madd_cy<41>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr2/Cm/Mmult_temp0_Madd_cy<42> (Lr1/Nr2/Cm/Mmult_temp0_Madd_cy<42>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr2/Cm/Mmult_temp0_Madd_cy<43> (Lr1/Nr2/Cm/Mmult_temp0_Madd_cy<43>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr2/Cm/Mmult_temp0_Madd_cy<44> (Lr1/Nr2/Cm/Mmult_temp0_Madd_cy<44>)
+     XORCY:CI->O           1   0.786   0.976  Lr1/Nr2/Cm/Mmult_temp0_Madd_xor<45> (Lr1/Nr2/Cm/Mmult_temp0_Madd_45)
+     LUT2:I0->O            1   0.479   0.000  Lr1/Nr2/Cm/Mmult_temp2_Madd_lut<45> (Lr1/Nr2/Cm/Mmult_temp2_Madd_lut<45>)
+     MUXCY:S->O            1   0.435   0.000  Lr1/Nr2/Cm/Mmult_temp2_Madd_cy<45> (Lr1/Nr2/Cm/Mmult_temp2_Madd_cy<45>)
+     XORCY:CI->O           1   0.786   0.976  Lr1/Nr2/Cm/Mmult_temp2_Madd_xor<46> (Lr1/Nr2/MultOut<30>)
+     LUT2:I0->O            1   0.479   0.000  Lr1/Nr2/Ca/Madd_outp_lut<30> (Lr1/Nr2/Ca/Madd_outp_lut<30>)
+     MUXCY:S->O            0   0.435   0.000  Lr1/Nr2/Ca/Madd_outp_cy<30> (Lr1/Nr2/Ca/Madd_outp_cy<30>)
+     XORCY:CI->O          33   0.786   1.639  Lr1/Nr2/Ca/Madd_outp_xor<31> (Lr1/Nr2/AccTemp<31>)
+     LUT3:I2->O            1   0.479   0.000  Lr1/Nr2/Caf/Mcompar_outp_cmp_lt0000_lut<4> (Lr1/Nr2/Caf/Mcompar_outp_cmp_lt0000_lut<4>)
+     MUXCY:S->O           31   0.644   1.865  Lr1/Nr2/Caf/Mcompar_outp_cmp_lt0000_cy<4> (Lr1/Nr2/Caf/Mcompar_outp_cmp_lt0000_cy<4>)
+     LUT3:I0->O            1   0.479   0.000  Lr1/Nr2/Caf/Mmux_outp81 (Lr1/Nr2/OutTemp<16>)
+     LD:D                      0.176          Lr1/Nr2/outp_16
+    ----------------------------------------
+    Total                     21.354ns (13.039ns logic, 8.315ns route)
+                                       (61.1% logic, 38.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Lr1/Nr3/ActiveEn1'
+  Total number of paths / destination ports: 75583638 / 31
+-------------------------------------------------------------------------
+Offset:              21.354ns (Levels of Logic = 24)
+  Source:            inp<16> (PAD)
+  Destination:       Lr1/Nr3/outp_16 (LATCH)
+  Destination Clock: Lr1/Nr3/ActiveEn1 falling
+
+  Data Path: inp<16> to Lr1/Nr3/outp_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.715   0.949  inp_16_IBUF (inp_16_IBUF)
+     LUT2:I1->O            2   0.479   0.745  Lr1/Nr3/Cs/OutI<16>1 (Lr1/Nr3/I1<16>)
+     MULT18X18:B16->P35   13   4.467   1.165  Lr1/Nr3/Cm/Mmult_temp_submult_0 (Lr1/Nr3/Cm/Mmult_temp_submult_0_35)
+     LUT2:I1->O            1   0.479   0.000  Lr1/Nr3/Cm/Mmult_temp0_Madd_lut<35> (Lr1/Nr3/Cm/Mmult_temp0_Madd_lut<35>)
+     MUXCY:S->O            1   0.435   0.000  Lr1/Nr3/Cm/Mmult_temp0_Madd_cy<35> (Lr1/Nr3/Cm/Mmult_temp0_Madd_cy<35>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr3/Cm/Mmult_temp0_Madd_cy<36> (Lr1/Nr3/Cm/Mmult_temp0_Madd_cy<36>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr3/Cm/Mmult_temp0_Madd_cy<37> (Lr1/Nr3/Cm/Mmult_temp0_Madd_cy<37>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr3/Cm/Mmult_temp0_Madd_cy<38> (Lr1/Nr3/Cm/Mmult_temp0_Madd_cy<38>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr3/Cm/Mmult_temp0_Madd_cy<39> (Lr1/Nr3/Cm/Mmult_temp0_Madd_cy<39>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr3/Cm/Mmult_temp0_Madd_cy<40> (Lr1/Nr3/Cm/Mmult_temp0_Madd_cy<40>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr3/Cm/Mmult_temp0_Madd_cy<41> (Lr1/Nr3/Cm/Mmult_temp0_Madd_cy<41>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr3/Cm/Mmult_temp0_Madd_cy<42> (Lr1/Nr3/Cm/Mmult_temp0_Madd_cy<42>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr3/Cm/Mmult_temp0_Madd_cy<43> (Lr1/Nr3/Cm/Mmult_temp0_Madd_cy<43>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr3/Cm/Mmult_temp0_Madd_cy<44> (Lr1/Nr3/Cm/Mmult_temp0_Madd_cy<44>)
+     XORCY:CI->O           1   0.786   0.976  Lr1/Nr3/Cm/Mmult_temp0_Madd_xor<45> (Lr1/Nr3/Cm/Mmult_temp0_Madd_45)
+     LUT2:I0->O            1   0.479   0.000  Lr1/Nr3/Cm/Mmult_temp2_Madd_lut<45> (Lr1/Nr3/Cm/Mmult_temp2_Madd_lut<45>)
+     MUXCY:S->O            1   0.435   0.000  Lr1/Nr3/Cm/Mmult_temp2_Madd_cy<45> (Lr1/Nr3/Cm/Mmult_temp2_Madd_cy<45>)
+     XORCY:CI->O           1   0.786   0.976  Lr1/Nr3/Cm/Mmult_temp2_Madd_xor<46> (Lr1/Nr3/MultOut<30>)
+     LUT2:I0->O            1   0.479   0.000  Lr1/Nr3/Ca/Madd_outp_lut<30> (Lr1/Nr3/Ca/Madd_outp_lut<30>)
+     MUXCY:S->O            0   0.435   0.000  Lr1/Nr3/Ca/Madd_outp_cy<30> (Lr1/Nr3/Ca/Madd_outp_cy<30>)
+     XORCY:CI->O          33   0.786   1.639  Lr1/Nr3/Ca/Madd_outp_xor<31> (Lr1/Nr3/AccTemp<31>)
+     LUT3:I2->O            1   0.479   0.000  Lr1/Nr3/Caf/Mcompar_outp_cmp_lt0000_lut<4> (Lr1/Nr3/Caf/Mcompar_outp_cmp_lt0000_lut<4>)
+     MUXCY:S->O           31   0.644   1.865  Lr1/Nr3/Caf/Mcompar_outp_cmp_lt0000_cy<4> (Lr1/Nr3/Caf/Mcompar_outp_cmp_lt0000_cy<4>)
+     LUT3:I0->O            1   0.479   0.000  Lr1/Nr3/Caf/Mmux_outp81 (Lr1/Nr3/OutTemp<16>)
+     LD:D                      0.176          Lr1/Nr3/outp_16
+    ----------------------------------------
+    Total                     21.354ns (13.039ns logic, 8.315ns route)
+                                       (61.1% logic, 38.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Lr1/Nr4/ActiveEn'
+  Total number of paths / destination ports: 75583638 / 31
+-------------------------------------------------------------------------
+Offset:              21.354ns (Levels of Logic = 24)
+  Source:            inp<16> (PAD)
+  Destination:       Lr1/Nr4/outp_16 (LATCH)
+  Destination Clock: Lr1/Nr4/ActiveEn falling
+
+  Data Path: inp<16> to Lr1/Nr4/outp_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.715   0.949  inp_16_IBUF (inp_16_IBUF)
+     LUT2:I1->O            2   0.479   0.745  Lr1/Nr4/Cs/OutI<16>1 (Lr1/Nr4/I1<16>)
+     MULT18X18:B16->P35   13   4.467   1.165  Lr1/Nr4/Cm/Mmult_temp_submult_0 (Lr1/Nr4/Cm/Mmult_temp_submult_0_35)
+     LUT2:I1->O            1   0.479   0.000  Lr1/Nr4/Cm/Mmult_temp0_Madd_lut<35> (Lr1/Nr4/Cm/Mmult_temp0_Madd_lut<35>)
+     MUXCY:S->O            1   0.435   0.000  Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<35> (Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<35>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<36> (Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<36>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<37> (Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<37>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<38> (Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<38>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<39> (Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<39>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<40> (Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<40>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<41> (Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<41>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<42> (Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<42>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<43> (Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<43>)
+     MUXCY:CI->O           1   0.056   0.000  Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<44> (Lr1/Nr4/Cm/Mmult_temp0_Madd_cy<44>)
+     XORCY:CI->O           1   0.786   0.976  Lr1/Nr4/Cm/Mmult_temp0_Madd_xor<45> (Lr1/Nr4/Cm/Mmult_temp0_Madd_45)
+     LUT2:I0->O            1   0.479   0.000  Lr1/Nr4/Cm/Mmult_temp2_Madd_lut<45> (Lr1/Nr4/Cm/Mmult_temp2_Madd_lut<45>)
+     MUXCY:S->O            1   0.435   0.000  Lr1/Nr4/Cm/Mmult_temp2_Madd_cy<45> (Lr1/Nr4/Cm/Mmult_temp2_Madd_cy<45>)
+     XORCY:CI->O           1   0.786   0.976  Lr1/Nr4/Cm/Mmult_temp2_Madd_xor<46> (Lr1/Nr4/MultOut<30>)
+     LUT2:I0->O            1   0.479   0.000  Lr1/Nr4/Ca/Madd_outp_lut<30> (Lr1/Nr4/Ca/Madd_outp_lut<30>)
+     MUXCY:S->O            0   0.435   0.000  Lr1/Nr4/Ca/Madd_outp_cy<30> (Lr1/Nr4/Ca/Madd_outp_cy<30>)
+     XORCY:CI->O          33   0.786   1.639  Lr1/Nr4/Ca/Madd_outp_xor<31> (Lr1/Nr4/AccTemp<31>)
+     LUT3:I2->O            1   0.479   0.000  Lr1/Nr4/Caf/Mcompar_outp_cmp_lt0000_lut<4> (Lr1/Nr4/Caf/Mcompar_outp_cmp_lt0000_lut<4>)
+     MUXCY:S->O           31   0.644   1.865  Lr1/Nr4/Caf/Mcompar_outp_cmp_lt0000_cy<4> (Lr1/Nr4/Caf/Mcompar_outp_cmp_lt0000_cy<4>)
+     LUT3:I0->O            1   0.479   0.000  Lr1/Nr4/Caf/Mmux_outp81 (Lr1/Nr4/OutTemp<16>)
+     LD:D                      0.176          Lr1/Nr4/outp_16
+    ----------------------------------------
+    Total                     21.354ns (13.039ns logic, 8.315ns route)
+                                       (61.1% logic, 38.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Lr2/clk21'
+  Total number of paths / destination ports: 431 / 431
+-------------------------------------------------------------------------
+Offset:              6.598ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       Lr2/Nr1/Counter_2 (FF)
+  Destination Clock: Lr2/clk21 rising
+
+  Data Path: rst to Lr2/Nr1/Counter_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           249   0.715   2.927  rst_IBUF (rst_IBUF)
+     LUT4:I0->O           34   0.479   1.585  Lr2/Nr5/Mcount_Counter_val1 (Lr2/Nr5/Mcount_Counter_val)
+     FDRE:R                    0.892          Lr2/Nr5/Counter_1
+    ----------------------------------------
+    Total                      6.598ns (2.086ns logic, 4.512ns route)
+                                       (31.6% logic, 68.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Lr3/clk21'
+  Total number of paths / destination ports: 294 / 294
+-------------------------------------------------------------------------
+Offset:              6.598ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       Lr3/Nr1/Counter_2 (FF)
+  Destination Clock: Lr3/clk21 rising
+
+  Data Path: rst to Lr3/Nr1/Counter_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           249   0.715   2.927  rst_IBUF (rst_IBUF)
+     LUT4:I0->O           34   0.479   1.585  Lr3/Nr3/Mcount_Counter_val1 (Lr3/Nr3/Mcount_Counter_val)
+     FDRE:R                    0.892          Lr3/Nr3/Counter_1
+    ----------------------------------------
+    Total                      6.598ns (2.086ns logic, 4.512ns route)
+                                       (31.6% logic, 68.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Lr4/Nr1/ActiveEn1'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              6.141ns (Levels of Logic = 1)
+  Source:            Lr4/Nr1/outp_31 (LATCH)
+  Destination:       outp<31> (PAD)
+  Source Clock:      Lr4/Nr1/ActiveEn1 falling
+
+  Data Path: Lr4/Nr1/outp_31 to outp<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.551   0.681  Lr4/Nr1/outp_31 (Lr4/Nr1/outp_31)
+     OBUF:I->O                 4.909          outp_31_OBUF (outp<31>)
+    ----------------------------------------
+    Total                      6.141ns (5.460ns logic, 0.681ns route)
+                                       (88.9% logic, 11.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 107.00 secs
+Total CPU time to Xst completion: 106.53 secs
+ 
+--> 
+
+Total memory usage is 4796060 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   31 (   0 filtered)
+Number of infos    :   16 (   0 filtered)
+

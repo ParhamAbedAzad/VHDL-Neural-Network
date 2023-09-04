@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Layer4_t_isim_beh.exe" -prj "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Layer4_t_beh.prj" "Layer4_t" 

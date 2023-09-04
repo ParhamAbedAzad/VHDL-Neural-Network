@@ -1,0 +1,34 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Layer4_t_isim_beh.exe -prj C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Layer4_t_beh.prj Layer4_t 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Utility.vhd" into library work
+Parsing VHDL file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Selector.vhd" into library work
+Parsing VHDL file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Multiplier.vhd" into library work
+Parsing VHDL file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Adder.vhd" into library work
+Parsing VHDL file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/ActivationFunc.vhd" into library work
+Parsing VHDL file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Neuron.vhd" into library work
+Parsing VHDL file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Layer4.vhd" into library work
+Parsing VHDL file "C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Layer4_t.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package utility
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package std_logic_signed
+Compiling architecture behavioral of entity Selector [\Selector(3)\]
+Compiling architecture behavioral of entity Multiplier [\Multiplier(32,16)\]
+Compiling architecture behavioral of entity Adder [\Adder(32)\]
+Compiling architecture behavioral of entity ActivationFunc [activationfunc_default]
+Compiling architecture behavioral of entity Neuron [\Neuron(3)\]
+Compiling architecture behavioral of entity Layer4 [\Layer4(1,3)\]
+Compiling architecture behavior of entity layer4_t
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 19 VHDL Units
+Built simulation executable C:/Users/FarazParham/Xilinx/Projects/NeuralNetwork/Layer4_t_isim_beh.exe
+Fuse Memory Usage: 57604 KB
+Fuse CPU Usage: 937 ms

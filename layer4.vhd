@@ -18,7 +18,7 @@ end Layer4;
 
 
 architecture Behavioral of Layer4 is
-	component Neuron2
+	component Neuron
 	generic (Ks: integer :=k);
 			Port (I : in  myArray(0 to Ks-1);
 					W : in  myArray(0 to Ks-1);
@@ -27,19 +27,21 @@ architecture Behavioral of Layer4 is
 					Rst :  in  STD_LOGIC;
 					outp : out  STD_LOGIC_VECTOR (31 downto 0));
 	end component; 
-
-signal weights1: myArray (0 to k-1) := ("11111111111111100110011000001011","11111111111111100110011000001011","11111111111111100110011000001011");
-signal biases: myArray (0 to n-1) := (OTHERS => "00000000000000001100111001111101");
+	
+signal weights1: myArray (0 to k-1) := ("00000000000000000101000001001110","11111111111111110001110001110010","00000000000000010010001001010100");
+signal biases: myArray (0 to n-1) := (OTHERS => "11111111111111111110001111011000");
+signal clk2: STD_LOGIC ;
 
 begin
-Nr1: Neuron2 port map (I,weights1,biases(0),clk,rst,O);
+clk2 <= clk and en;
+Nr1: Neuron port map (I,weights1,biases(0),clk2,rst,O);
 
 
 process(clk)
 variable Counter_X : integer range 0 to 255 := 0;
 variable Counter_Y : integer range 0 to 255 := 0;
 variable Counter_B : integer range 0 to 255 := 0;
-variable rst_weight_en : STD_LOGIC;
+variable rst_weight_en : STD_LOGIC := '0';
 begin
 if rising_edge(clk) then
 	if(rst_weights='1') then
@@ -47,7 +49,7 @@ if rising_edge(clk) then
 	end if;
 		if(rst_weight_en = '1') then
 		
-			if(Counter_B <= n ) then
+			if(Counter_B < n ) then
 				biases(Counter_B)<=serial_inp;
 				Counter_B:=Counter_B+1;
 			end if;

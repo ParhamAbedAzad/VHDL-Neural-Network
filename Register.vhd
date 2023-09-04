@@ -14,7 +14,7 @@ begin
 process(clk)
 begin
 	if rising_edge(Clk) then
-		if en='0' then
+		if en='1' then
 			outp <= inp;
 		end if;
 	end if;

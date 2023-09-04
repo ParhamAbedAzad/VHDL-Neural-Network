@@ -47,22 +47,20 @@ component Selector
            OutW : out  STD_LOGIC_VECTOR(31 DOWNTO 0)
 			  );
 			  end component; 
-constant bias : STD_LOGIC_VECTOR(31 downto 0) := BiasIn;
 signal W1,I1: STD_LOGIC_VECTOR(31 downto 0);
-signal Acc: STD_LOGIC_VECTOR(31 downto 0) := BiasIn;
+signal Acc: STD_LOGIC_VECTOR(31 downto 0);
 signal AccTemp: STD_LOGIC_VECTOR(31 downto 0);
 signal MultOut: STD_LOGIC_VECTOR(31 downto 0);
 signal OutTemp: STD_LOGIC_VECTOR(31 downto 0);
 signal ActiveEn: STD_LOGIC := '0';
-signal RegEn: STD_LOGIC := '1';
+--signal RegEn: STD_LOGIC := '0';
 signal SelectSig: integer range 0 to Ks := Ks;
 begin
 Cs: Selector port map(I,W,SelectSig , I1,W1);
-Cr: Reg port map (Acc,clk,RegEn,AccTemp);
+--Cr: Reg port map (AccTemp,clk,RegEn,Acc);
 Cm: Multiplier port map (W1,I1,MultOut);
 Ca: Adder port map (MultOut,Acc,AccTemp);
-Caf: ActivationFunc port map (Acc,OutTemp);
-outp <= OutTemp when ActiveEn='1';
+Caf: ActivationFunc port map (AccTemp,OutTemp);
 process(clk)
 variable Counter : integer range 0 to Ks+1 := 0;
 begin
@@ -70,16 +68,22 @@ begin
 	if(rst='1') then
 		Counter := 0;
 		ActiveEn <= '0';
-		RegEn <= '1';
+		--RegEn <= '0';
 		Acc <= BiasIn;
 		selectSig <= Ks;
 	else
-	if Counter<Ks then
+	if Counter=0 then
+		acc <= BiasIn;
+		SelectSig <= Counter;
+		Counter := Counter+1;
+	elsif Counter<Ks then
+		Acc <= AccTemp;
 		SelectSig <= Counter;
 		Counter := Counter+1;
 	elsif Counter = Ks then
 		ActiveEn <= '1';
-		RegEn <= '0';
+		outp <= outTemp;
+		--RegEn <= '0';
 		SelectSig <= Counter;
 		Counter := Counter+1;
 	end if;

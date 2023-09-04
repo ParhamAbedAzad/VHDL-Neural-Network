@@ -4,10 +4,10 @@ entity Controller is
     Port ( WRST : in STD_LOGIC;
 			  clk : in  STD_LOGIC;
 			  rst : in STD_LOGIC;
-           en1 : out  STD_LOGIC;
-           en2 : out  STD_LOGIC;
-           en3 : out  STD_LOGIC;
-           en4 : out  STD_LOGIC;
+           en1 : out  STD_LOGIC := '0';
+           en2 : out  STD_LOGIC := '0';
+           en3 : out  STD_LOGIC := '0';
+           en4 : out  STD_LOGIC := '0';
 			  done : out STD_LOGIC := '1';
 			  WRST1 : out STD_LOGIC := '0';
 			  WRST2 : out STD_LOGIC := '0';
@@ -17,18 +17,14 @@ entity Controller is
 end Controller;
 
 architecture Behavioral of Controller is
-constant clkNum1 : integer := 8;
-constant clkNum2 : integer := 8;
-constant clkNum3 : integer := 8;
+constant clkNum1 : integer := 12;
+constant clkNum2 : integer := 25;
+constant clkNum3 : integer := 22;
 constant clkNum4 : integer := 8;
-constant CalClkNum1 : integer := 2;
-constant CalClkNum2 : integer := 8;
-constant CalClkNum3 : integer := 8;
-constant CalClkNum4 : integer := 8;
 signal reseting : std_logic := '0';
 begin
 process(clk)
-variable Counter : integer range 0 to 15 := 0;--4+5+3+1
+variable Counter : integer range 0 to 22 := 0;--4+5+3+1
 variable Counter2 : integer range 0 to 255 := 0;--4+5+3+1
 begin
 if rising_edge(Clk) then
@@ -46,7 +42,7 @@ if rising_edge(Clk) then
 			WRST4 <= '1';
 		else
 			WRST4 <= '0';
-			reseting <= '1';
+			reseting <= '0';
 			Counter2 := 0;
 		counter2 := counter2 + 1;
 		end if;
@@ -59,17 +55,19 @@ if rising_edge(Clk) then
 		if(WRST='1') then
 			reseting <= '1';
 		end if;
-	elsif Counter < 15 then
-		if Counter = 1 then
+	elsif Counter < 19 then
+		if counter = 0 then
+			en1 <= '1';
+		elsif Counter = 3 then
 			en1 <= '0';
 			en2 <= '1';
-		elsif Counter = 5 then
+		elsif Counter = 8 then
 			en2 <= '0';
 			en3 <= '1';
-		elsif Counter = 10 then
+		elsif Counter = 14 then
 			en3 <= '0';
 			en4 <= '1';
-		elsif Counter = 13 then
+		elsif Counter = 18 then
 			en4 <= '0';
 			done <= '1';
 		end if;
